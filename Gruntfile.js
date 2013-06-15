@@ -12,9 +12,25 @@ module.exports = function (grunt) {
   grunt.initConfig({
 
     site: siteConfig,
-    pkg: grunt.file.readJSON('package.json')
+    pkg: grunt.file.readJSON('package.json'),
+    compass: {
+      options: {
+        sassDir: '<%= site.app %>/styles',
+        cssDir: '<%= site.app %>/styles',
+        imagesDir: '<%= site.app %>/images',
+        javascriptsDir: '<%= site.app %>/scripts',
+        fontsDir: '<%= site.app %>/styles/fonts',
+        relativeAssets: false
+      },
+      dist: {},
+      server: {
+        options: {
+          debugInfo: true
+        }
+      }
+    }
 
   }); // initConfig
 
-  grunt.registerTask('default', ['livereload-start', 'connect', 'regarde']);
+  grunt.registerTask('default', ['compass:server']);
 };
