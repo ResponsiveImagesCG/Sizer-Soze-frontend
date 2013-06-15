@@ -1,4 +1,7 @@
 .DS_Store
-.sass-cache
+
 node_modules
 app/components
+
+.sass-cache
+*.css
