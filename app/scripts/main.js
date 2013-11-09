@@ -51,7 +51,7 @@
       tr.appendChild( td );
     }
     thead.appendChild( tr );
-    tbody.appendChild( thead );
+    table.appendChild( thead );
 
     //BODY
     for( var i = 0, l = arr.length; i < l; i++ ){
