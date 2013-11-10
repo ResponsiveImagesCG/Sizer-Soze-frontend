@@ -44,6 +44,8 @@
 
     results = document.querySelectorAll( ".sizer-results" );
 
+    results.innerHTML = "";
+
     //HEAD
     summary2 = arr[0].summary;
     tr = document.createElement( "tr" );
@@ -69,7 +71,12 @@
     }
     table.appendChild( tbody );
     for( var m = 0, ml = results.length; m < ml; m++ ){
-      results[m].appendChild( table );
+      var r = results[m];
+      var iframe = r.querySelector( "iframe" );
+      if( iframe ){
+        r.removeChild( iframe );
+      }
+      r.appendChild( table );
     }
   };
 
@@ -114,8 +121,17 @@
     return data;
   };
 
-  SizerSoze.prototype.sizerTime = function(){
+  SizerSoze.prototype.sizerTime = function( opts ){
     var data = this.gatherData();
+    if( opts.distractionYTVideo ) {
+      var results = document.querySelector( ".sizer-results.cf" );
+      var iframe = document.createElement( "iframe" );
+      iframe.width = "560";
+      iframe.height = "315";
+      iframe.src =  "//www.youtube.com/embed/" + opts.distractionYTVideo + "?autoplay=1";
+      iframe.frameborder="0";
+      results.appendChild( iframe );
+    }
     makeRequest( this.apiURL, data, processData );
   };
 

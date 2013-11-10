@@ -7,7 +7,9 @@
 
   urlInput.addEventListener( "keyup" , function( e ){
     if( e.which === 13 ) {
-      sizerSoze.sizerTime();
+      sizerSoze.sizerTime({
+        distractionYTVideo: "Of2HU3LGdbo"
+      });
     }
   });
 
