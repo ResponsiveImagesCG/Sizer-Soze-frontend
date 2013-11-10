@@ -7,3 +7,4 @@ A web-based Sizer Soze.
 
 npm install
 
+bundle install (if compass isn't installed globally)
