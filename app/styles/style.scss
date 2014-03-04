@@ -237,18 +237,15 @@ footer {
   table{
     width: 100%;
 
-    td{
+    td, th{
       padding: .5em;
     }
-  }
-  thead {
-    td{
+
+    th {
       font-weight: bold;
       text-align: center;
     }
-  }
-  tbody {
-    td {
+    td{
       text-align: right;
     }
   }

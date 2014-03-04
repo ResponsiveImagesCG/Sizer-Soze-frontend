@@ -60,7 +60,7 @@
         "lossy": "Lossy Savings",
         "resize": "Resized Savings"
       },
-      tr, td, summary, summary2, results;
+      tr, td, th, summary, summary2, results;
 
     results = document.querySelectorAll( ".sizer-results" );
 
@@ -71,14 +71,14 @@
     header.innerHTML = "Results for " + summary2["url"];
     tr = document.createElement( "tr" );
     for( var k in headers ){
-      td = document.createElement( "td" );
-      td.innerHTML = headers[k];
-      tr.appendChild( td );
+      th = document.createElement( "th" );
+      th.innerHTML = headers[k];
+      tr.appendChild( th );
     }
     //Let's show a percentage here too
-    td = document.createElement( "td" );
-    td.innerHTML = "% Savings";
-    tr.appendChild( td );
+    th = document.createElement( "th" );
+    th.innerHTML = "% Savings";
+    tr.appendChild( th );
 
     thead.appendChild( tr );
     table.appendChild( thead );
