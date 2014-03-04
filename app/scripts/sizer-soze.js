@@ -35,11 +35,31 @@
     req.send();
   };
 
+  var bytesToSize = function( bytes ) {
+    console.log(bytes);
+    var sizes = ["Bytes", "KB", "MB"],
+        i,
+        isPositive = (bytes > 0) ? 1 : -1;
+    if (bytes === 0) return "0 Bytes";
 
+    i = parseInt(Math.floor(Math.log(bytes * isPositive) / Math.log(1024)), 10);
+    return (bytes / Math.pow(1024, i)).toFixed(2) + ' ' + sizes[i];
+    
+    
+  };
   var createTable = function( arr ){
     var table = document.createElement( "table" ),
       tbody = document.createElement( "tbody" ),
       thead = document.createElement( "thead" ),
+      header = document.createElement("h1"),
+      conclusion = document.createElement('p'),
+      headers = {
+        "viewport": "Breakpoint",
+        "image_data": "Original Weight",
+        "lossless": "Lossless Savings",
+        "lossy": "Lossy Savings",
+        "resize": "Resized Savings"
+      },
       tr, td, summary, summary2, results;
 
     results = document.querySelectorAll( ".sizer-results" );
@@ -48,10 +68,11 @@
 
     //HEAD
     summary2 = arr[0].summary;
+    header.innerHTML = "Results for " + summary2["url"];
     tr = document.createElement( "tr" );
-    for( var k in summary2 ){
+    for( var k in headers ){
       td = document.createElement( "td" );
-      td.innerHTML = k;
+      td.innerHTML = headers[k];
       tr.appendChild( td );
     }
     thead.appendChild( tr );
@@ -61,10 +82,9 @@
     for( var i = 0, l = arr.length; i < l; i++ ){
       tr = document.createElement( "tr" );
       summary = arr[i].summary;
-      for( var j in summary ){
-        console.log( j );
+      for( var j in headers ){
         td = document.createElement( "td" );
-        td.innerHTML = summary[j];
+        td.innerHTML = (j === 'viewport') ? summary[j] : bytesToSize(summary[j]);
         tr.appendChild( td );
       }
       tbody.appendChild( tr );
@@ -76,6 +96,7 @@
       if( iframe ){
         r.removeChild( iframe );
       }
+      r.appendChild( header );
       r.appendChild( table );
     }
   };
