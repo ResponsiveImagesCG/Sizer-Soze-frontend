@@ -36,7 +36,6 @@
   };
 
   var bytesToSize = function( bytes ) {
-    console.log(bytes);
     var sizes = ["Bytes", "KB", "MB"],
         i,
         isPositive = (bytes > 0) ? 1 : -1;
