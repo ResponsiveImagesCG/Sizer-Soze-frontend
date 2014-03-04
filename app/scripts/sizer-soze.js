@@ -75,6 +75,11 @@
       td.innerHTML = headers[k];
       tr.appendChild( td );
     }
+    //Let's show a percentage here too
+    td = document.createElement( "td" );
+    td.innerHTML = "Potential Savings";
+    tr.appendChild( td );
+
     thead.appendChild( tr );
     table.appendChild( thead );
 
@@ -87,6 +92,15 @@
         td.innerHTML = (j === 'viewport') ? summary[j] : bytesToSize(summary[j]);
         tr.appendChild( td );
       }
+      //Let's show a percentage here too
+      td = document.createElement( "td" );
+      if (summary["image_data"] !== 0 && summary["resize"] !== 0) {
+        td.innerHTML = Math.floor(( summary["resize"] / summary["image_data"] ) * 100) + "%";
+      } else {
+        td.innerHTML = "0%";
+      }
+      tr.appendChild( td );
+
       tbody.appendChild( tr );
     }
     table.appendChild( tbody );
