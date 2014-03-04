@@ -77,7 +77,7 @@
     }
     //Let's show a percentage here too
     td = document.createElement( "td" );
-    td.innerHTML = "Potential Savings";
+    td.innerHTML = "% Savings";
     tr.appendChild( td );
 
     thead.appendChild( tr );
