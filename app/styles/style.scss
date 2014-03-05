@@ -222,6 +222,35 @@ footer {
   }
 }
 
+.sizer-results {
+  font-family: Lato;
+
+  h1 {
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: 500;
+    color: #640f09;
+    margin: 25px 0 20px;
+    position: relative;
+    text-align: center;
+  }
+  table{
+    width: 100%;
+
+    td, th{
+      padding: .5em;
+    }
+
+    th {
+      font-weight: bold;
+      text-align: center;
+    }
+    td{
+      text-align: right;
+    }
+  }
+
+}
 .input {
   padding: 15px 30px;
   margin: 15px 0 10px;

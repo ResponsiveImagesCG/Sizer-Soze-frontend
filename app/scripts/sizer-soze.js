@@ -35,12 +35,31 @@
     req.send();
   };
 
+  var bytesToSize = function( bytes ) {
+    var sizes = ["Bytes", "KB", "MB"],
+        i,
+        isPositive = (bytes > 0) ? 1 : -1;
+    if (bytes === 0) return "0 Bytes";
 
+    i = parseInt(Math.floor(Math.log(bytes * isPositive) / Math.log(1024)), 10);
+    return (bytes / Math.pow(1024, i)).toFixed(2) + ' ' + sizes[i];
+    
+    
+  };
   var createTable = function( arr ){
     var table = document.createElement( "table" ),
       tbody = document.createElement( "tbody" ),
       thead = document.createElement( "thead" ),
-      tr, td, summary, summary2, results;
+      header = document.createElement("h1"),
+      conclusion = document.createElement('p'),
+      headers = {
+        "viewport": "Breakpoint",
+        "image_data": "Original Weight",
+        "lossless": "Lossless Savings",
+        "lossy": "Lossy Savings",
+        "resize": "Resized Savings"
+      },
+      tr, td, th, summary, summary2, results;
 
     results = document.querySelectorAll( ".sizer-results" );
 
@@ -48,12 +67,18 @@
 
     //HEAD
     summary2 = arr[0].summary;
+    header.innerHTML = "Results for " + summary2["url"];
     tr = document.createElement( "tr" );
-    for( var k in summary2 ){
-      td = document.createElement( "td" );
-      td.innerHTML = k;
-      tr.appendChild( td );
+    for( var k in headers ){
+      th = document.createElement( "th" );
+      th.innerHTML = headers[k];
+      tr.appendChild( th );
     }
+    //Let's show a percentage here too
+    th = document.createElement( "th" );
+    th.innerHTML = "% Savings";
+    tr.appendChild( th );
+
     thead.appendChild( tr );
     table.appendChild( thead );
 
@@ -61,12 +86,20 @@
     for( var i = 0, l = arr.length; i < l; i++ ){
       tr = document.createElement( "tr" );
       summary = arr[i].summary;
-      for( var j in summary ){
-        console.log( j );
+      for( var j in headers ){
         td = document.createElement( "td" );
-        td.innerHTML = summary[j];
+        td.innerHTML = (j === 'viewport') ? summary[j] : bytesToSize(summary[j]);
         tr.appendChild( td );
       }
+      //Let's show a percentage here too
+      td = document.createElement( "td" );
+      if (summary["image_data"] !== 0 && summary["resize"] !== 0) {
+        td.innerHTML = Math.floor(( summary["resize"] / summary["image_data"] ) * 100) + "%";
+      } else {
+        td.innerHTML = "0%";
+      }
+      tr.appendChild( td );
+
       tbody.appendChild( tr );
     }
     table.appendChild( tbody );
@@ -76,6 +109,7 @@
       if( iframe ){
         r.removeChild( iframe );
       }
+      r.appendChild( header );
       r.appendChild( table );
     }
   };
