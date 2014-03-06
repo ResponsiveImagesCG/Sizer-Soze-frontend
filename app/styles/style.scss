@@ -14,6 +14,9 @@ header {
   padding: 30px 50px 30px;
   position: relative;
 }
+.fourth-content {
+  padding-bottom: 60px;
+}
 .third-content {
   background-color: #f9c1bf;
   margin-bottom: 10px;
@@ -21,6 +24,10 @@ header {
   position: relative;
 }
 
+img.loading {
+  display: block;
+  margin: 0 auto;
+}
 footer {
   background-color: #f4f2ef;
   margin-bottom: 10px;

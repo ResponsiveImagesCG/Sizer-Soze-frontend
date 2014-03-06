@@ -63,7 +63,8 @@
 
     results = document.querySelectorAll( ".sizer-results" );
 
-    results.innerHTML = "";
+    console.log( results );
+    results[ 0 ].innerHTML = "";
 
     //HEAD
     summary2 = arr[0].summary;
@@ -143,7 +144,7 @@
     for( var i = 0, l = breakpoints.length; i < l; i++ ){
       var bp = breakpoints[i];
       var input = bp.querySelector( "input" );
-      if( input != null ){
+      if( input !== null ){
         bps.push( input.value );
       }
     }
@@ -157,14 +158,23 @@
 
   SizerSoze.prototype.sizerTime = function( opts ){
     var data = this.gatherData();
+    var results = document.querySelector( ".sizer-results.cf" );
+
+    results.innerHTML = "";
+
     if( opts.distractionYTVideo ) {
-      var results = document.querySelector( ".sizer-results.cf" );
       var iframe = document.createElement( "iframe" );
       iframe.width = "560";
       iframe.height = "315";
       iframe.src =  "//www.youtube.com/embed/" + opts.distractionYTVideo + "?autoplay=1";
       iframe.frameborder="0";
       results.appendChild( iframe );
+    } else {
+      var loading = document.createElement( "img" );
+      loading.src = opts.loading;
+      loading.alt = "Loading results.";
+      loading.setAttribute( "class", "loading" );
+      results.appendChild( loading );
     }
     makeRequest( this.apiURL, data, processData );
   };

@@ -8,7 +8,8 @@
   urlInput.addEventListener( "keyup" , function( e ){
     if( e.which === 13 ) {
       sizerSoze.sizerTime({
-        distractionYTVideo: "Of2HU3LGdbo"
+        loading: "images/ajax-loader.gif"
+        // distractionYTVideo: "Of2HU3LGdbo"
       });
     }
   });

@@ -9,9 +9,7 @@
 
 /* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
 ----------------------------------------------------------------------------------------*/
-@media screen and (max-width: 63.236em) {
-
-	#container { width: 30em; }
+@media screen and (max-width: 45em) {
 	.breakpoint {
 		width: 100%;
 		margin-right: 0;
@@ -35,7 +33,7 @@
 		text-align: center;
 	}
 }
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 20em) {
 
 	#container { width: 100%; }
 	header {
