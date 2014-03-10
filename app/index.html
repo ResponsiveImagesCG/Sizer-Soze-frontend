@@ -15,18 +15,18 @@
     <link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">-->
 
     <!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
-    <link rel="stylesheet" href="/styles/global.css" media="all">
-    <link rel="stylesheet" href="/styles/fa/css/font-awesome.css" media="all">
+    <link rel="stylesheet" href="./styles/global.css" media="all">
+    <link rel="stylesheet" href="./styles/fa/css/font-awesome.css" media="all">
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/styles/style.css" media="all">
-    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="./styles/style.css" media="all">
+    <link rel="stylesheet" href="./styles/layout.css">
     <!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
 
     <!--[if (lt IE 9) & (!IEMobile)]>
-    <link rel="stylesheet" href="/styles/layout.css" media="all">
+    <link rel="stylesheet" href="./styles/layout.css" media="all">
     <![endif]-->
 
-    <script src="/scripts/libs/modernizr-1.7.min.js"></script>
+    <script src="./scripts/libs/modernizr-1.7.min.js"></script>
 
   </head>
   <body>
@@ -44,7 +44,7 @@
 
         <h2 class="section-title">Enter the URL you want to check</h2>
         <div class="input">
-          <input name="url" type="text" class="url" placeholder="Please enter the URL you want to analyse...">
+          <input name="url" type="url" class="url" placeholder="Please enter the URL you want to analyse..." required>
         </div>
         <h2 class="section-title">...and define your breakpoints</h2>
         <div class="breakpoints cf">
@@ -56,7 +56,8 @@
                 <input name="amount" type="text" value="860">
               </div>
               <select>
-                <option>px</option>
+                <option value="px">px</option>
+                <option value="em">em</option>
               </select>
             </div>
           </div>
@@ -67,7 +68,8 @@
                 <input name="amount" type="text" value="1280">
               </div>
               <select>
-                <option>px</option>
+                <option value="px">px</option>
+                <option value="em">em</option>
               </select>
             </div>
           </div>
@@ -78,7 +80,8 @@
                 <input name="amount" type="text" value="1600">
               </div>
               <select>
-                <option>px</option>
+                <option value="px">px</option>
+                <option value="em">em</option>
               </select>
             </div>
 
@@ -90,6 +93,9 @@
             </div>
 
           </div>
+        </div>
+        <div>
+          <button id="requestresults">Show me the results!</button>
         </div>
       </div>
 
@@ -143,8 +149,8 @@
 
     </div>
 
-    <script src="/scripts/sizer-soze.js"></script>
-    <script src="/scripts/main.js"></script>
+    <script src="./scripts/sizer-soze.js"></script>
+    <script src="./scripts/main.js"></script>
 
   </body>
 </html>
