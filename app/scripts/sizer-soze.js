@@ -43,8 +43,8 @@
 
     i = parseInt(Math.floor(Math.log(bytes * isPositive) / Math.log(1024)), 10);
     return (bytes / Math.pow(1024, i)).toFixed(2) + ' ' + sizes[i];
-    
-    
+
+
   };
   var createTable = function( arr ){
     var table = document.createElement( "table" ),
@@ -154,6 +154,13 @@
     data.ignore_invisibles = 0;
 
     return data;
+  };
+
+  SizerSoze.prototype.addBP = function(){
+    var bpHTML = doc.querySelector( ".breakpoint" ).outerHTML.replace('860', ''),
+        bpContainer = doc.querySelector(".bpcontainer");
+
+    bpContainer.innerHTML += bpHTML;
   };
 
   SizerSoze.prototype.sizerTime = function( opts ){
