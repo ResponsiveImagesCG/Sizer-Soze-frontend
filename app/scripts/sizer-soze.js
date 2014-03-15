@@ -175,6 +175,13 @@
     return data;
   };
 
+  SizerSoze.prototype.addBP = function(){
+    var bpHTML = doc.querySelector( ".breakpoint" ).outerHTML.replace('860', ''),
+        bpContainer = doc.querySelector(".bpcontainer");
+
+    bpContainer.innerHTML += bpHTML;
+  };
+
   SizerSoze.prototype.sizerTime = function( opts ){
     var data = this.gatherData();
     var results = document.querySelector( ".sizer-results.cf" );
