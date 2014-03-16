@@ -141,9 +141,9 @@
     var breakpoints = doc.querySelectorAll( ".breakpoint" );
     var bps = [];
     var i = 0;
-    var l = breakpoints.length;
+    var bpLength = breakpoints.length;
 
-    for (; i < l; i++) {
+    for (; i < bpLength; i++) {
       var valueType;
       var bpValue;
       var bp = breakpoints[i];
