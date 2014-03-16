@@ -43,8 +43,8 @@
 
     i = parseInt(Math.floor(Math.log(bytes * isPositive) / Math.log(1024)), 10);
     return (bytes / Math.pow(1024, i)).toFixed(2) + ' ' + sizes[i];
-    
-    
+
+
   };
   var createTable = function( arr ){
     var table = document.createElement( "table" ),
@@ -140,12 +140,31 @@
     var urlInput = doc.querySelector( "input[name=url]" );
     var breakpoints = doc.querySelectorAll( ".breakpoint" );
     var bps = [];
+    var i = 0;
+    var bpLength = breakpoints.length;
 
-    for( var i = 0, l = breakpoints.length; i < l; i++ ){
+    for (; i < bpLength; i++) {
+      var valueType;
+      var bpValue;
       var bp = breakpoints[i];
       var input = bp.querySelector( "input" );
-      if( input !== null ){
-        bps.push( input.value );
+
+      try {
+        valueType = bp.querySelector("select").value;
+        bpValue = input.value;
+
+        if (valueType == "em") {
+          var unitConversion = 16; // Assuming 1em = 16px
+
+          bpValue = input.value * unitConversion; // Convert to px
+        }
+
+        if( input !== null && bpValue !== null){
+          bps.push( bpValue );
+          console.log(bps);
+        }
+      } catch (e) {
+        console.log('Couldn’t find select and input field.');
       }
     }
 
