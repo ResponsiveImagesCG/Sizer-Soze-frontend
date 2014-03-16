@@ -294,6 +294,7 @@ footer {
 .breakpoint {
   width: 23%;
   margin-right: 2%;
+  margin-bottom: 2%;
   float: left;
   background-color: #f49f9f;
   border-radius: 5px;
@@ -303,7 +304,7 @@ footer {
     padding: 0 0 20px;
   }
 
-  h3 {
+  h3, button {
     font-family: Lato;
     font-size: 15px;
     font-weight: 700;
@@ -318,6 +319,12 @@ footer {
       top: 0;
       color: #ed8484;
     }
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
   .input {
