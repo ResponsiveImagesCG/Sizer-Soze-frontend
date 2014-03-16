@@ -17,6 +17,7 @@
       sizerSoze.sizerTime({
         loading: "images/ajax-loader.gif"
       });
+    }
   });
 
 }( SizerSoze, this ));
