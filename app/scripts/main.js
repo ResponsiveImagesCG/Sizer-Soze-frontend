@@ -3,15 +3,12 @@
   var doc = win.document;
   var sizerSoze = new SizerSoze();
 
-  var urlInput = doc.querySelector( "input[name=url]" );
-
-  urlInput.addEventListener( "keyup" , function( e ){
-    if( e.which === 13 ) {
+  var submit = doc.querySelector( "input[type=submit]" );
+    submit.addEventListener( "click" , function( e ){
       sizerSoze.sizerTime({
         loading: "images/ajax-loader.gif"
         // distractionYTVideo: "Of2HU3LGdbo"
       });
-    }
   });
 
 }( SizerSoze, this ));
