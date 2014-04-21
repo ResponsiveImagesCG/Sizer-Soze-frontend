@@ -11,7 +11,7 @@ header {
 .fourth-content {
   background-color: #ec6a6a;
   margin-bottom: 10px;
-  padding: 30px 50px 30px;
+  padding: 30px 50px 10px;
   position: relative;
 }
 .fourth-content {
@@ -44,7 +44,7 @@ footer {
     list-style-type: none;
     float: left;
     width: 33%;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 10px;
     font-weight: 500;
     color: #999;
@@ -104,7 +104,7 @@ footer {
 
     h4 {
       margin: 0 0 0 80px;
-      font-family: Lato;
+      font-family: Lato, sans-serif;
       font-size: 16px;
       font-weight: 500;
       color: #333;
@@ -116,7 +116,7 @@ footer {
       margin: 0 0 0 80px;
       padding: 0;
       font-size: 10px;
-      font-family: Lato;
+      font-family: Lato, sans-serif;
       color: #999;
       font-weight: 500;
       text-align: left;
@@ -132,7 +132,7 @@ footer {
 }
 
 .title {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 5em;
   text-align: center;
   font-weight: 300;
@@ -142,13 +142,72 @@ footer {
 }
 
 .subtitle {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 1em;
   text-align: center;
   font-weight: 100;
   color: #f4f2ef;
   margin: 0 0 50px;
   text-transform: uppercase;
+}
+
+.breakpoint {
+  position: relative;
+  opacity: 1;
+
+  -webkit-transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease;
+  -moz-transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease;
+  transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease;
+}
+.breakpoint.fadein {
+  opacity: 1;
+}
+.breakpoint.fadeout {
+  opacity: 0;
+}
+a.icon-remove {
+  display: block;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  text-indent: -999px;
+  overflow: hidden;
+  width: 1.75em;
+  height: 1.75em;
+}
+.breakpoint:first-child a.icon-remove {
+  display: none;
+}
+a.icon-remove:active {
+  margin-top: 1px;
+}
+a.add-bp {
+  color: #7f1b18;
+  display: block;
+  float: left;
+  font-family: Lato, sans-serif;
+  clear: both;
+  margin: 1em 0 .5em 0;
+  padding: .1em 0 .5em 2em;
+  text-decoration: none;
+}
+a.add-bp:active {
+  position: relative;
+  top: 1px;
+}
+.get-results {
+  background-color: #9a2424;
+  background-position: center center;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-indent: -9999px;
+  width: 5em;
 }
 
 .logo {
@@ -171,6 +230,7 @@ footer {
     height: 80px;
     margin: 25px auto 0;
     background-color: #fff;
+    background-position: center center;
     border-radius: 40px;
     position: relative;
 
@@ -184,7 +244,7 @@ footer {
   }
 
   h1 {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 25px;
     font-weight: 500;
     color: #640f09;
@@ -195,7 +255,7 @@ footer {
 
   p {
     padding: 0 25px;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #7f1b18;
@@ -230,10 +290,10 @@ footer {
 }
 
 .sizer-results {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
 
   h1 {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 25px;
     font-weight: 500;
     color: #640f09;
@@ -250,13 +310,16 @@ footer {
 
     th {
       font-weight: bold;
-      text-align: center;
+      text-align: left;
     }
     td{
+      text-align: left;
+    }
+    td:last-child {
       text-align: right;
+      font-weight: bold;
     }
   }
-
 }
 .input {
   padding: 15px 30px;
@@ -264,13 +327,14 @@ footer {
   border: 5px #9a2424 solid;
   border-radius: 5px;
   background-color: #fff;
+  position: relative;
 }
 
 .url {
   width: 100%;
   padding: 0;
   font-size: 15px;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-weight: 700;
   box-sizing: border-box;
   border-radius: 5px;
@@ -279,7 +343,7 @@ footer {
 }
 
 .section-title {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 25px;
   font-weight: 500;
   color: #9a2424;
@@ -288,12 +352,13 @@ footer {
 }
 
 .breakpoints {
-  padding: 20px 0 50px;
+  padding: 20px 0;
 }
 
 .breakpoint {
   width: 23%;
   margin-right: 2%;
+  margin-top: .6em;
   float: left;
   background-color: #f49f9f;
   border-radius: 5px;
@@ -304,7 +369,7 @@ footer {
   }
 
   h3 {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 15px;
     font-weight: 700;
     color: #9a2424;
@@ -330,8 +395,8 @@ footer {
 
   input {
     width: 100%;
-    font-size: 15px;
-    font-family: Lato;
+    font-size: 18px;
+    font-family: Lato, sans-serif;
     font-weight: 500;
     box-sizing: border-box;
     outline: 0;

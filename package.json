@@ -5,6 +5,7 @@
     "grunt": "~0.4.1",
     "matchdep": "~0.1.1",
     "grunt-contrib-compass": "~0.2.0",
-    "request": "~2.27.0"
+    "request": "~2.27.0",
+    "grunt-grunticon": "~1.1.0"
   }
 }

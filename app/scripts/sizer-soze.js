@@ -198,6 +198,46 @@
     makeRequest( this.apiURL, data, processData );
   };
 
+  SizerSoze.prototype.removeBP = function( el ){
+    var bp = el.parentNode;
+    var bps = doc.querySelectorAll( ".breakpoint" );
+
+    if( bps.length > 1 ) {
+      bp.setAttribute( "class", bp.getAttribute( "class") + " fadeout" );
+
+      setTimeout( function() {
+        bp.style.width = "1px";
+        bp.style.marginRight = "0";
+
+        setTimeout( function() {
+          bp.remove();
+        }, 300 );
+      }, 500 );
+    }
+  };
+
+  SizerSoze.prototype.addBP = function( e ){
+    e.preventDefault();
+    var bps = doc.querySelectorAll( ".breakpoint" );
+    var bp = bps[ bps.length - 1 ];
+    var newbp = bp.cloneNode( true );
+    var fadein = function() {
+      var bps = doc.querySelectorAll( ".breakpoint" );
+      var bp = bps[ bps.length - 1 ];
+
+      setTimeout(function() {
+        bp.setAttribute( "class", bp.getAttribute( "class" ).replace( "fadeout", "" ) );
+      }, 0);
+    };
+
+    newbp.getElementsByTagName( "input" )[ 0 ].value = "";
+    newbp.setAttribute( "class", bp.getAttribute( "class" ) + " fadeout" );
+
+    bp.parentNode.insertBefore( newbp, e.target );
+
+    fadein();
+  };
+
   win.SizerSoze = SizerSoze;
 
 }( this ));
