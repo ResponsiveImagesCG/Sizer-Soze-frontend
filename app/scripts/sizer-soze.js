@@ -189,11 +189,13 @@
       iframe.frameborder="0";
       results.appendChild( iframe );
     } else {
+      var loadingwrap = document.createElement( "div" );
       var loading = document.createElement( "img" );
       loading.src = opts.loading;
       loading.alt = "Loading results.";
-      loading.setAttribute( "class", "loading" );
-      results.appendChild( loading );
+      loadingwrap.appendChild( loading );
+      loadingwrap.setAttribute( "class", "loading" );
+      results.appendChild( loadingwrap );
     }
     makeRequest( this.apiURL, data, processData );
   };
@@ -207,6 +209,7 @@
 
       setTimeout( function() {
         bp.style.width = "1px";
+        bp.style.maxHeight = "1px";
         bp.style.marginRight = "0";
 
         setTimeout( function() {
