@@ -1,0 +1,24 @@
+.icon-add {
+	background-image: url('png/add.png');
+	background-repeat: no-repeat;
+}
+.icon-del {
+	background-image: url('png/del.png');
+	background-repeat: no-repeat;
+}
+.icon-go {
+	background-image: url('png/go.png');
+	background-repeat: no-repeat;
+}
+.icon-link {
+	background-image: url('png/link.png');
+	background-repeat: no-repeat;
+}
+.icon-bp {
+	background-image: url('png/bp.png');
+	background-repeat: no-repeat;
+}
+.icon-check {
+	background-image: url('png/check.png');
+	background-repeat: no-repeat;
+}

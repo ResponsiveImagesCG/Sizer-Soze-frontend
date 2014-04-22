@@ -5,3 +5,4 @@ app/components
 
 .sass-cache
 *.css
+!app/styles/grunticon/*.css
