@@ -82,6 +82,8 @@
 
     thead.appendChild( tr );
     table.appendChild( thead );
+    table.className = "tablesaw tablesaw-stack";
+    table.setAttribute( "data-mode", "stack" );
 
     //BODY
     for( var i = 0, l = arr.length; i < l; i++ ){
@@ -124,6 +126,10 @@
     try {
       var arr = JSON.parse( data );
       createTable( arr );
+
+      if( typeof jQuery !== 'undefined' ) {
+        $( ".sizer-results" ).trigger( "enhance" );
+      }
     } catch (e){
       throw new Error( e );
     }

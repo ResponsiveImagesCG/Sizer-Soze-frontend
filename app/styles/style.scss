@@ -1,3 +1,5 @@
+@import "libs/tablesaw.stackonly";
+
 body {
   padding: 10px;
   margin: 0;
@@ -310,6 +312,13 @@ a.add-bp:active {
     position: relative;
     text-align: center;
   }
+
+  @include tablesaw-stack( 45em );
+
+  .tablesaw-stack tbody tr {
+    border-color: #ec6a6a;
+  }
+
   table{
     width: 100%;
 
@@ -325,9 +334,13 @@ a.add-bp:active {
       text-align: left;
     }
     td:last-child {
-      text-align: right;
       font-weight: bold;
     }
+  }
+}
+@media ( min-width: 45em ) {
+  .sizer-results table td:last-child {
+    text-align: right;
   }
 }
 .input {
