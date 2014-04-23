@@ -319,7 +319,7 @@ a.add-bp:active {
     border-color: #ec6a6a;
   }
 
-  table{
+  table {
     width: 100%;
 
     td, th{
@@ -330,11 +330,48 @@ a.add-bp:active {
       font-weight: bold;
       text-align: left;
     }
+    tbody {
+      border-top: 1px solid #ec6a6a;
+    }
     td{
+      text-align: right;
+    }
+    td b {
+      display: table-cell;
+      float: left;
+      clear: left;
+      vertical-align: bottom;
       text-align: left;
     }
     td:last-child {
+      color: #9a2424;
       font-weight: bold;
+      font-size: 1.4em;
+    }
+    td:last-child b {
+      color: #333;
+      font-size: .7em;
+    }
+  }
+
+  @media ( min-width: 45em ) {
+    table{
+      td{
+        text-align: left;
+      }
+      thead {
+        border-bottom: 1px solid #ec6a6a;
+      }
+      tbody {
+        border-top: none;
+      }
+      thead tr th {
+        font-size: .9em;
+        padding-bottom: .25em !important;
+      }
+      thead th:last-child {
+        text-align: right;
+      }
     }
   }
 }
