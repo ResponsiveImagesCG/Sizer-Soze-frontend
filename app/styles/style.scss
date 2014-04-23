@@ -94,9 +94,37 @@ footer {
 
   }
 
-  .downloadlogo {
+  .credits {
+    h2 {
+      color: #7f1b18;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.3em;
+      color: #555;
+    }
+  }
+  .ricg {
     position: relative;
-    height: 58px;
+
+    a {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    }
+
+    @media ( min-width: 45em ) {
+        width: 20%;
+        float: right;
+        a {
+          margin: 0;
+        }
+      }
+
+    p {
+      margin: 0;
+    }
 
     a {
       text-decoration: none;
