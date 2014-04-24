@@ -226,7 +226,7 @@
         bp.style.marginRight = "0";
 
         setTimeout( function() {
-          bp.remove();
+          bp.parentNode.removeChild( bp );
         }, 300 );
       }, 500 );
     }
