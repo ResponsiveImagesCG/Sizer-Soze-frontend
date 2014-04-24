@@ -197,9 +197,16 @@
     } else {
       var loadingwrap = document.createElement( "div" );
       var loading = document.createElement( "img" );
+      var warn = document.createElement( "p" );
+      var warning = document.createTextNode( "Processing. This can take a minute or two." );
       loading.src = opts.loading;
       loading.alt = "Loading results.";
+
+      warn.appendChild( warning );
+
       loadingwrap.appendChild( loading );
+      loadingwrap.appendChild( warn );
+
       loadingwrap.setAttribute( "class", "loading" );
       results.appendChild( loadingwrap );
     }

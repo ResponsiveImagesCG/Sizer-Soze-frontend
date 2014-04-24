@@ -29,14 +29,17 @@ header {
 .loading {
   margin: 0 auto;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  overflow: hidden;
   text-align: center;
+  margin: 0 0 0 -5px;
 }
 .loading img {
-  display: inline-block;
-  margin: 0 0 0 -5px;
+  display: block;
+  margin: 0 auto;
+}
+.loading p {
+  display: block;
+  margin: 0 auto;
+  font-size: .9em;
 }
 footer {
   background-color: #f4f2ef;
