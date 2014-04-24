@@ -104,6 +104,9 @@ footer {
       font-size: 1.3em;
       color: #555;
     }
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
   .ricg {
     position: relative;
