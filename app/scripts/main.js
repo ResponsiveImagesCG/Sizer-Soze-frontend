@@ -24,8 +24,8 @@
 
     if( el && el.getAttribute( "class" ) && el.getAttribute( "class" ).indexOf( "icon-remove" ) > -1 ){
       sizerSoze.removeBP( el );
+      e.preventDefault();
     }
-    e.preventDefault();
   });
 
   urlInput.addEventListener( "keyup" , function( e ){
