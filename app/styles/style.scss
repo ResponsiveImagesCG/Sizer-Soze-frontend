@@ -195,6 +195,17 @@ footer {
   text-transform: uppercase;
 }
 
+.error {
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  color: #9a2424;
+
+  > p {
+    margin: 0;
+    line-height: 1;
+  }
+}
+
 .breakpoint {
   position: relative;
   opacity: 1;

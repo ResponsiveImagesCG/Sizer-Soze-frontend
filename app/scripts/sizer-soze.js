@@ -63,7 +63,6 @@
 
     results = document.querySelectorAll( ".sizer-results" );
 
-    console.log( results );
     results[ 0 ].innerHTML = "";
 
     //HEAD
@@ -167,7 +166,6 @@
 
         if( input !== null && bpValue !== null){
           bps.push( bpValue );
-          console.log(bps);
         }
       } catch (e) {
         console.log('Couldn’t find select and input field.');
