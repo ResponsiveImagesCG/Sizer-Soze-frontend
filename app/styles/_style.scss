@@ -81,7 +81,7 @@ footer {
     width: 33%;
     font-family: $main-font-family;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 400;
     color: #999;
     line-height: 1.5;
     text-align: center;
@@ -145,13 +145,13 @@ footer {
     }
 
     @media (min-width: 45em) {
-        width: 20%;
-        float: right;
+      width: 20%;
+      float: right;
 
-        a {
-          margin: 0;
-        }
+      a {
+        margin: 0;
       }
+    }
 
     p {
       margin: 0;
@@ -175,7 +175,7 @@ footer {
       margin: 0 0 0 80px;
       font-family: $main-font-family;
       font-size: 16px;
-      font-weight: 500;
+      font-weight: 400;
       color: #333;
       line-height: 24px;
       text-align: left;
@@ -187,7 +187,7 @@ footer {
       font-size: 10px;
       font-family: $main-font-family;
       color: #999;
-      font-weight: 500;
+      font-weight: 400;
       text-align: left;
     }
   }
@@ -233,7 +233,7 @@ footer {
 
 .breakpoint {
   position: relative;
-  max-height: 500px;
+  max-height: 400px;
   opacity: 1;
 
   -webkit-transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease, max-height 0.3s ease;
@@ -339,7 +339,7 @@ a.add-bp:active {
     text-align: center;
     font-family: $main-font-family;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 400;
     color: #640f09;
   }
 
@@ -388,7 +388,7 @@ a.add-bp:active {
     text-align: center;
     font-family: $main-font-family;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 400;
     color: #640f09;
   }
 
@@ -477,6 +477,10 @@ a.add-bp:active {
   background-color: #fff;
   border: 5px #9a2424 solid;
   border-radius: 5px;
+
+  @media (max-width: 35em) {
+    padding: 15px 10px;
+  }
 }
 
 .url {
@@ -495,7 +499,7 @@ a.add-bp:active {
   text-align: center;
   font-family: $main-font-family;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   color: #9a2424;
 }
 
@@ -545,7 +549,7 @@ a.add-bp:active {
     text-align: right;
     font-size: 18px;
     font-family: $main-font-family;
-    font-weight: 500;
+    font-weight: 400;
     outline: 0;
     border: 0;
   }
@@ -591,6 +595,5 @@ a.add-bp:active {
       }
     }
   }
-
 }
 

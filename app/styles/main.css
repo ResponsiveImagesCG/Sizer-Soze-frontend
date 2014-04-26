@@ -1,3 +1,4 @@
+/*! SizerSoze - MIT License - 2014-04-26 */
 /*
 Goldilocks Approach to Responsive Web Design Boilerplate
 
@@ -24,7 +25,6 @@ CONTENTS - LAYOUT.CSS
 */
 /* 1. RESET
 ----------------------------------------------------------------------------------------*/
-/* line 41, _global.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,21 +46,18 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 50, _global.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
 /* 2. ROOT
 ----------------------------------------------------------------------------------------*/
-/* line 57, _global.scss */
 html {
   overflow-y: scroll;
   background: #FFF;
 }
 
 /* /ht Ethan Marcotte - http://front.ie/l8rJaA */
-/* line 66, _global.scss */
 img,
 embed,
 object,
@@ -68,7 +65,6 @@ video {
   max-width: 100%;
 }
 
-/* line 73, _global.scss */
 .ie6 img.full,
 .ie6 object.full,
 .ie6 embed, .ie6
@@ -79,7 +75,6 @@ video {
 /*
  * Apply border-box as standard box-model for all elements
  */
-/* line 83, _global.scss */
 *,
 *:before,
 *:after {
@@ -88,7 +83,6 @@ video {
 
 /* 3. CORE TYPOGRAPHY
 ----------------------------------------------------------------------------------------*/
-/* line 90, _global.scss */
 body {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1em;
@@ -96,7 +90,6 @@ body {
   color: #333;
 }
 
-/* line 102, _global.scss */
 h1,
 h2,
 h3,
@@ -107,7 +100,6 @@ h6 {
   line-height: 1em;
 }
 
-/* line 111, _global.scss */
 p,
 ul,
 ol,
@@ -120,19 +112,16 @@ blockquote {
   font-size: 1em;
 }
 
-/* line 118, _global.scss */
 ul {
   list-style-type: disc;
   margin-left: 1.618em;
 }
 
-/* line 123, _global.scss */
 ol {
   list-style-type: decimal;
   margin-left: 1.618em;
 }
 
-/* line 129, _global.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -140,26 +129,22 @@ nav ol {
   padding: 0;
 }
 
-/* line 136, _global.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 141, _global.scss */
 i,
 em {
   font-style: italic;
 }
 
-/* line 145, _global.scss */
 small {
   font-size: 80%;
 }
 
 /* 4. LINKS
 ----------------------------------------------------------------------------------------*/
-/* line 153, _global.scss */
 a,
 a:visited {
   outline: none;
@@ -167,13 +152,11 @@ a:visited {
   color: #d80d07;
 }
 
-/* line 159, _global.scss */
 a:hover {
   outline: none;
   text-decoration: none;
 }
 
-/* line 164, _global.scss */
 a:active {
   outline: none;
 }
@@ -182,33 +165,28 @@ a:active {
 ----------------------------------------------------------------------------------------*/
 /* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
 ----------------------------------------------------------------------------------------*/
-/* line 174, _global.scss */
 #container {
   max-width: 30em;
   margin: auto;
   padding: 0;
 }
 
-/* line 180, _global.scss */
 aside {
   width: 100%;
 }
 
 /* 7. BROWSER AND NON-SEMANTIC STYLING
 ----------------------------------------------------------------------------------------*/
-/* line 188, _global.scss */
 .cf:before,
 .cf:after {
   content: "";
   display: block;
 }
 
-/* line 193, _global.scss */
 .cf:after {
   clear: both;
 }
 
-/* line 197, _global.scss */
 .ie6 .cf {
   zoom: 1;
 }
@@ -219,27 +197,23 @@ aside {
 /*! Tablesaw - v0.1.1 - 2014-04-22
 * https://github.com/filamentgroup/tablesaw
 * Copyright (c) 2014 Filament Group; Licensed MIT */
-/* line 8, libs/_tablesaw.stackonly.scss */
 table.tablesaw {
   empty-cells: show;
   max-width: 100%;
   width: 100%;
 }
 
-/* line 14, libs/_tablesaw.stackonly.scss */
 .tablesaw {
   border-collapse: collapse;
   width: 100%;
 }
 
 /* Structure */
-/* line 21, libs/_tablesaw.stackonly.scss */
 .tablesaw {
   border: 0;
   padding: 0;
 }
 
-/* line 27, libs/_tablesaw.stackonly.scss */
 .tablesaw th,
 .tablesaw td {
   -webkit-box-sizing: border-box;
@@ -248,19 +222,16 @@ table.tablesaw {
   padding: .5em .7em;
 }
 
-/* line 34, libs/_tablesaw.stackonly.scss */
 .tablesaw thead tr:first-child th {
   padding-top: .9em;
   padding-bottom: .7em;
 }
 
 /* Table rows have a gray bottom stroke by default */
-/* line 41, libs/_tablesaw.stackonly.scss */
 .tablesaw-stack tbody tr {
   border-bottom: 1px solid #dfdfdf;
 }
 
-/* line 46, libs/_tablesaw.stackonly.scss */
 .tablesaw-stack td .tablesaw-cell-label,
 .tablesaw-stack th .tablesaw-cell-label {
   display: none;
@@ -269,21 +240,18 @@ table.tablesaw {
 /* Mobile first styles: Begin with the stacked presentation at narrow widths */
 @media only all {
   /* Show the table cells as a block level element */
-  /* line 56, libs/_tablesaw.stackonly.scss */
   .tablesaw-stack td,
   .tablesaw-stack th {
     text-align: left;
     display: block;
   }
 
-  /* line 61, libs/_tablesaw.stackonly.scss */
   .tablesaw-stack tr {
     clear: both;
     display: table-row;
   }
 
   /* Make the label elements a percentage width */
-  /* line 69, libs/_tablesaw.stackonly.scss */
   .tablesaw-stack td .tablesaw-cell-label,
   .tablesaw-stack th .tablesaw-cell-label {
     display: block;
@@ -293,7 +261,6 @@ table.tablesaw {
   }
 
   /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
-  /* line 79, libs/_tablesaw.stackonly.scss */
   .tablesaw-stack th .tablesaw-cell-label-top,
   .tablesaw-stack td .tablesaw-cell-label-top {
     display: block;
@@ -301,94 +268,18 @@ table.tablesaw {
     margin: .4em 0;
   }
 
-  /* line 85, libs/_tablesaw.stackonly.scss */
   .tablesaw-cell-label {
     display: block;
   }
 
   /* Avoid double strokes when stacked */
-  /* line 91, libs/_tablesaw.stackonly.scss */
   .tablesaw-stack tbody th.group {
     margin-top: -1px;
   }
 
   /* Avoid double strokes when stacked */
-  /* line 97, libs/_tablesaw.stackonly.scss */
   .tablesaw-stack th.group b.tablesaw-cell-label {
     display: none !important;
-  }
-}
-/* 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
-----------------------------------------------------------------------------------------*/
-/* line 3, _layout.scss */
-#container {
-  padding: 0;
-  margin: 0 auto;
-  max-width: 60em;
-}
-
-/* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
-----------------------------------------------------------------------------------------*/
-@media screen and (max-width: 45em) {
-  /* line 13, _layout.scss */
-  .breakpoint {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 2%;
-  }
-
-  /* line 19, _layout.scss */
-  .section {
-    width: 100%;
-    margin-bottom: 2%;
-    padding: 10px 0px;
-  }
-
-  /* line 25, _layout.scss */
-  .section p {
-    margin-bottom: 0;
-  }
-
-  /* line 29, _layout.scss */
-  footer li {
-    width: 100%;
-    margin-bottom: 2%;
-    padding: 10px 0;
-    text-align: center;
-  }
-
-  /* line 36, _layout.scss */
-  footer li.social {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 20em) {
-  /* line 43, _layout.scss */
-  #container {
-    width: 100%;
-  }
-
-  /* line 47, _layout.scss */
-  header {
-    padding: 30px 15px;
-  }
-
-  /* line 51, _layout.scss */
-  .secondary-content {
-    padding: 30px 15px;
-  }
-
-  /* line 55, _layout.scss */
-  .third-content {
-    position: relative;
-    margin-bottom: 10px;
-    padding: 30px 15px;
-    background-color: #f9c1bf;
-  }
-
-  /* line 62, _layout.scss */
-  footer {
-    padding: 30px 15px;
   }
 }
 /*
@@ -401,20 +292,17 @@ table.tablesaw {
 /*
  * Layout stuff
  */
-/* line 18, _style.scss */
 body {
   padding: 10px;
   margin: 0;
 }
 
-/* line 23, _style.scss */
 header {
   background-color: #7f1b18;
   margin-bottom: 10px;
   padding: 30px 20px;
 }
 
-/* line 30, _style.scss */
 .secondary-content,
 .fourth-content {
   background-color: #ec6a6a;
@@ -423,12 +311,10 @@ header {
   position: relative;
 }
 
-/* line 37, _style.scss */
 .fourth-content {
   padding-bottom: 60px;
 }
 
-/* line 41, _style.scss */
 .third-content {
   background-color: #f9c1bf;
   margin-bottom: 10px;
@@ -436,7 +322,6 @@ header {
   position: relative;
 }
 
-/* line 48, _style.scss */
 .loading {
   margin: 0 auto;
   border-radius: 50%;
@@ -444,148 +329,123 @@ header {
   margin: 0 0 0 -5px;
 }
 
-/* line 55, _style.scss */
 .loading img {
   display: block;
   margin: 0 auto;
 }
 
-/* line 60, _style.scss */
 .loading p {
   display: block;
   margin: 0 auto;
   font-size: .9em;
 }
 
-/* line 66, _style.scss */
 footer {
   background-color: #f4f2ef;
   margin-bottom: 10px;
   padding: 30px 50px;
 }
-/* line 71, _style.scss */
 footer ul {
   max-width: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-/* line 78, _style.scss */
 footer li {
   list-style-type: none;
   float: left;
   width: 33%;
   font-family: "Lato", sans-serif;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 400;
   color: #999;
   line-height: 1.5;
   text-align: center;
 }
-/* line 89, _style.scss */
 footer li.linksources {
   line-height: 15px;
   padding: 15px 0;
 }
-/* line 93, _style.scss */
 footer li.linksources a {
   text-decoration: none;
   color: #999;
 }
-/* line 97, _style.scss */
 footer li.linksources a:hover {
   text-decoration: underline;
   color: #7f1b18;
 }
-/* line 105, _style.scss */
 footer .social {
   text-align: right;
   line-height: 60px;
 }
-/* line 109, _style.scss */
 footer .social a {
   text-decoration: none;
   color: #7f1b18;
   font-size: 25px;
   margin-right: 10px;
 }
-/* line 115, _style.scss */
 footer .social a:hover {
   color: #ec6a6a;
 }
-/* line 122, _style.scss */
 footer .credits h2 {
   color: #7f1b18;
   font-size: 1.5em;
   font-weight: bold;
 }
-/* line 128, _style.scss */
 footer .credits p {
   font-size: 1.3em;
   color: #555;
 }
-/* line 133, _style.scss */
 footer .credits p:last-child {
   margin-bottom: 0;
 }
-/* line 138, _style.scss */
 footer .ricg {
   position: relative;
 }
-/* line 141, _style.scss */
 footer .ricg a {
   max-width: 200px;
   display: block;
   margin: 0 auto;
 }
 @media (min-width: 45em) {
-  /* line 138, _style.scss */
   footer .ricg {
     width: 20%;
     float: right;
   }
-  /* line 151, _style.scss */
   footer .ricg a {
     margin: 0;
   }
 }
-/* line 156, _style.scss */
 footer .ricg p {
   margin: 0;
 }
-/* line 160, _style.scss */
 footer .ricg a {
   text-decoration: none;
 }
-/* line 164, _style.scss */
 footer .ricg a:hover p {
   color: #7f1b18;
 }
-/* line 168, _style.scss */
 footer .ricg a:hover h4 {
   color: #7f1b18;
 }
-/* line 174, _style.scss */
 footer .ricg h4 {
   margin: 0 0 0 80px;
   font-family: "Lato", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   color: #333;
   line-height: 24px;
   text-align: left;
 }
-/* line 184, _style.scss */
 footer .ricg p {
   margin: 0 0 0 80px;
   padding: 0;
   font-size: 10px;
   font-family: "Lato", sans-serif;
   color: #999;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
 }
-/* line 195, _style.scss */
 footer .logo {
   margin: 0;
   position: absolute;
@@ -593,7 +453,6 @@ footer .logo {
   left: 0;
 }
 
-/* line 203, _style.scss */
 .title {
   font-family: "Lato", sans-serif;
   font-size: 5em;
@@ -604,7 +463,6 @@ footer .logo {
   text-transform: uppercase;
 }
 
-/* line 213, _style.scss */
 .subtitle {
   margin: 0 0 50px;
   font-family: "Lato", sans-serif;
@@ -615,39 +473,33 @@ footer .logo {
   text-transform: uppercase;
 }
 
-/* line 223, _style.scss */
 .error {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   color: #9a2424;
 }
-/* line 228, _style.scss */
 .error > p {
   margin: 0;
   line-height: 1;
 }
 
-/* line 234, _style.scss */
 .breakpoint {
   position: relative;
-  max-height: 500px;
+  max-height: 400px;
   opacity: 1;
   -webkit-transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease, max-height 0.3s ease;
   -moz-transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease, max-height 0.3s ease;
   transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease, max-height 0.3s ease;
 }
 
-/* line 244, _style.scss */
 .breakpoint.fadein {
   opacity: 1;
 }
 
-/* line 248, _style.scss */
 .breakpoint.fadeout {
   opacity: 0;
 }
 
-/* line 252, _style.scss */
 a.icon-remove {
   display: block;
   position: absolute;
@@ -659,17 +511,14 @@ a.icon-remove {
   text-indent: -999px;
 }
 
-/* line 263, _style.scss */
 .breakpoint:first-child a.icon-remove {
   display: none;
 }
 
-/* line 267, _style.scss */
 a.icon-remove:active {
   margin-top: 1px;
 }
 
-/* line 271, _style.scss */
 a.add-bp {
   display: block;
   float: left;
@@ -681,13 +530,11 @@ a.add-bp {
   text-decoration: none;
 }
 
-/* line 282, _style.scss */
 a.add-bp:active {
   position: relative;
   top: 1px;
 }
 
-/* line 287, _style.scss */
 .get-results {
   position: absolute;
   top: 0;
@@ -703,7 +550,6 @@ a.add-bp:active {
   text-indent: -9999px;
 }
 
-/* line 302, _style.scss */
 .logo {
   margin: 50px auto 20px;
   width: 50px;
@@ -715,13 +561,11 @@ a.add-bp:active {
   border-radius: 5px;
 }
 
-/* line 313, _style.scss */
 .section {
   float: left;
   width: 33%;
   padding: 25px 0;
 }
-/* line 318, _style.scss */
 .section .iconbg {
   position: relative;
   width: 80px;
@@ -731,7 +575,6 @@ a.add-bp:active {
   background-position: center center;
   border-radius: 40px;
 }
-/* line 327, _style.scss */
 .section .iconbg i {
   position: relative;
   top: 20px;
@@ -739,17 +582,15 @@ a.add-bp:active {
   font-size: 41px;
   color: #7f1b18;
 }
-/* line 336, _style.scss */
 .section h1 {
   margin: 25px 0 20px;
   position: relative;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   color: #640f09;
 }
-/* line 346, _style.scss */
 .section p {
   padding: 0 25px;
   font-family: "Lato", sans-serif;
@@ -758,7 +599,6 @@ a.add-bp:active {
   color: #7f1b18;
   line-height: 1.5;
 }
-/* line 355, _style.scss */
 .section .arrow-down-bg {
   position: absolute;
   top: -50px;
@@ -771,7 +611,6 @@ a.add-bp:active {
   border-right: 50px solid transparent;
   border-bottom: 50px solid #fff;
 }
-/* line 368, _style.scss */
 .section .arrow-down {
   position: absolute;
   top: -35px;
@@ -785,27 +624,23 @@ a.add-bp:active {
   border-bottom: 35px solid #f9c1bf;
 }
 
-/* line 382, _style.scss */
 .sizer-results {
   font-family: "Lato", sans-serif;
 }
-/* line 385, _style.scss */
 .sizer-results h1 {
   position: relative;
   margin: 25px 0 20px;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   color: #640f09;
 }
 @media (max-width: 44.9375em) {
-  /* line 103, libs/_tablesaw.stackonly.scss */
   .sizer-results .tablesaw-stack thead td,
   .sizer-results .tablesaw-stack thead th {
     display: none;
   }
-  /* line 107, libs/_tablesaw.stackonly.scss */
   .sizer-results .tablesaw-stack tbody td,
   .sizer-results .tablesaw-stack tbody th {
     clear: left;
@@ -814,16 +649,13 @@ a.add-bp:active {
   }
 }
 @media (min-width: 45em) {
-  /* line 382, _style.scss */
   .sizer-results {
     /* Show the table header rows */
     /* Hide the labels in each cell */
   }
-  /* line 115, libs/_tablesaw.stackonly.scss */
   .sizer-results .tablesaw-stack tr {
     display: table-row;
   }
-  /* line 122, libs/_tablesaw.stackonly.scss */
   .sizer-results .tablesaw-stack td,
   .sizer-results .tablesaw-stack th,
   .sizer-results .tablesaw-stack thead td,
@@ -831,38 +663,30 @@ a.add-bp:active {
     display: table-cell;
     margin: 0;
   }
-  /* line 128, libs/_tablesaw.stackonly.scss */
   .sizer-results .tablesaw-stack td .tablesaw-cell-label,
   .sizer-results .tablesaw-stack th .tablesaw-cell-label {
     display: none !important;
   }
 }
-/* line 397, _style.scss */
 .sizer-results .tablesaw-stack tbody tr {
   border-color: #ec6a6a;
 }
-/* line 401, _style.scss */
 .sizer-results table {
   width: 100%;
 }
-/* line 404, _style.scss */
 .sizer-results table td, .sizer-results table th {
   padding: 0.5em;
 }
-/* line 408, _style.scss */
 .sizer-results table th {
   font-weight: bold;
   text-align: left;
 }
-/* line 413, _style.scss */
 .sizer-results table tbody {
   border-top: 1px solid #ec6a6a;
 }
-/* line 417, _style.scss */
 .sizer-results table td {
   text-align: right;
 }
-/* line 421, _style.scss */
 .sizer-results table td b {
   display: table-cell;
   float: left;
@@ -870,48 +694,39 @@ a.add-bp:active {
   vertical-align: bottom;
   text-align: left;
 }
-/* line 429, _style.scss */
 .sizer-results table td:last-child {
   color: #9a2424;
   font-weight: bold;
   font-size: 1.4em;
 }
-/* line 435, _style.scss */
 .sizer-results table td:last-child b {
   color: #333;
   font-size: 0.7em;
 }
 @media (min-width: 45em) {
-  /* line 443, _style.scss */
   .sizer-results table td {
     text-align: left;
   }
-  /* line 447, _style.scss */
   .sizer-results table thead {
     border-bottom: 1px solid #ec6a6a;
   }
-  /* line 451, _style.scss */
   .sizer-results table tbody {
     border-top: none;
   }
-  /* line 455, _style.scss */
   .sizer-results table thead tr th {
     font-size: 0.9em;
     padding-bottom: 0.25em !important;
   }
-  /* line 460, _style.scss */
   .sizer-results table thead th:last-child {
     text-align: right;
   }
 }
 
 @media (min-width: 45em) {
-  /* line 468, _style.scss */
   .sizer-results table td:last-child {
     text-align: right;
   }
 }
-/* line 473, _style.scss */
 .input {
   position: relative;
   margin: 15px 0 10px;
@@ -920,8 +735,12 @@ a.add-bp:active {
   border: 5px #9a2424 solid;
   border-radius: 5px;
 }
+@media (max-width: 35em) {
+  .input {
+    padding: 15px 10px;
+  }
+}
 
-/* line 482, _style.scss */
 .url {
   width: 100%;
   padding: 0;
@@ -933,22 +752,19 @@ a.add-bp:active {
   border: 0;
 }
 
-/* line 493, _style.scss */
 .section-title {
   margin: 20px 0;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   color: #9a2424;
 }
 
-/* line 502, _style.scss */
 .breakpoints {
   padding: 20px 0;
 }
 
-/* line 506, _style.scss */
 .breakpoint {
   float: left;
   width: 23%;
@@ -957,12 +773,10 @@ a.add-bp:active {
   background-color: #f49f9f;
   border-radius: 5px;
 }
-/* line 514, _style.scss */
 .breakpoint .inner {
   margin: 20px 20px;
   padding: 0 0 20px;
 }
-/* line 519, _style.scss */
 .breakpoint h3 {
   position: relative;
   margin: 0 0 10px;
@@ -972,64 +786,118 @@ a.add-bp:active {
   font-weight: 700;
   color: #9a2424;
 }
-/* line 528, _style.scss */
 .breakpoint h3 i {
   position: absolute;
   right: 0;
   top: 0;
   color: #ed8484;
 }
-/* line 536, _style.scss */
 .breakpoint .input {
   margin: 5px 0;
   padding: 5px 10px;
   border: 1px #7f1b18 solid;
   border-radius: 5px;
 }
-/* line 543, _style.scss */
 .breakpoint input {
   width: 100%;
   text-align: right;
   font-size: 18px;
   font-family: "Lato", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   outline: 0;
   border: 0;
 }
-/* line 553, _style.scss */
 .breakpoint select {
   float: right;
   font-size: 15px;
 }
-/* line 558, _style.scss */
 .breakpoint:hover i {
   color: #9a2424;
 }
-/* line 562, _style.scss */
 .breakpoint.new {
   background-color: transparent;
 }
-/* line 567, _style.scss */
 .breakpoint.new h3 a {
   color: #bf3939;
   text-decoration: none;
 }
-/* line 571, _style.scss */
 .breakpoint.new h3 a:hover {
   color: #7f1b18;
 }
-/* line 574, _style.scss */
 .breakpoint.new h3 a:hover i {
   color: #7f1b18;
 }
-/* line 580, _style.scss */
 .breakpoint.new h3 i {
   float: left;
   color: #bf3939;
   position: static;
   margin-right: 5px;
 }
-/* line 588, _style.scss */
 .breakpoint.new h3:hover i {
   color: inherit;
 }
+
+/* 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+----------------------------------------------------------------------------------------*/
+#container {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 60em;
+}
+
+/* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+----------------------------------------------------------------------------------------*/
+@media (max-width: 45em) {
+  .breakpoint {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2%;
+  }
+
+  .section {
+    width: 100%;
+    margin-bottom: 2%;
+    padding: 10px 0px;
+  }
+
+  .section p {
+    margin-bottom: 0;
+  }
+
+  footer li {
+    width: 100%;
+    margin-bottom: 2%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  footer li.social {
+    text-align: center;
+  }
+}
+@media (max-width: 20em) {
+  #container {
+    width: 100%;
+  }
+
+  header {
+    padding: 30px 15px;
+  }
+
+  .secondary-content {
+    padding: 30px 15px;
+  }
+
+  .third-content {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 30px 15px;
+    background-color: #f9c1bf;
+  }
+
+  footer {
+    padding: 30px 15px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
