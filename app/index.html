@@ -39,72 +39,75 @@
         <h2 class="subtitle">What is the cost of your non-responsive images?</h2>
       </header>
 
-      <div class="secondary-content cf" role="main">
+      <main role="main">
+        <div class="secondary-content cf">
 
-        <h2 class="section-title">Enter the URL you want to check</h2>
-        <div class="input">
-          <input name="url" type="url" class="url" placeholder="Enter the URL you want to check." required>
-          <button class="get-results icon-go" id="requestresults">Show me the results!</button>
-        </div>
-        <h2 class="section-title">...and define your breakpoints</h2>
-        <div class="breakpoints cf">
+          <h2 class="section-title">Enter the URL you want to check</h2>
+          <div class="input">
+            <input name="url" type="url" class="url" placeholder="Enter the URL you want to check." required>
+            <button class="get-results icon-go" id="requestresults">Show me the results!</button>
+          </div>
+          <h2 class="section-title">...and define your breakpoints</h2>
+          <div class="breakpoints cf">
 
-          <div class="breakpoint">
-            <div class="inner">
-              <h3>Breakpoint</h3>
-              <div class="input">
-                <input name="amount" type="text" value="320">
+            <div class="breakpoint">
+              <div class="inner">
+                <h3>Breakpoint</h3>
+                <div class="input">
+                  <input name="amount" type="text" value="320">
+                </div>
+                <select>
+                  <option value="px">px</option>
+                  <option value="em">em</option>
+                </select>
               </div>
-              <select>
-                <option value="px">px</option>
-                <option value="em">em</option>
-              </select>
+              <a href="#" class="icon-remove icon-del">Remove Breakpoint</a>
             </div>
-            <a href="#" class="icon-remove icon-del">Remove Breakpoint</a>
-          </div>
-          <div class="breakpoint">
-            <div class="inner">
-              <h3>Breakpoint</h3>
-              <div class="input">
-                <input name="amount" type="text" value="1280">
+            <div class="breakpoint">
+              <div class="inner">
+                <h3>Breakpoint</h3>
+                <div class="input">
+                  <input name="amount" type="text" value="1280">
+                </div>
+                <select>
+                  <option value="px">px</option>
+                  <option value="em">em</option>
+                </select>
               </div>
-              <select>
-                <option value="px">px</option>
-                <option value="em">em</option>
-              </select>
+              <a href="#" class="icon-remove icon-del">Remove Breakpoint</a>
             </div>
-            <a href="#" class="icon-remove icon-del">Remove Breakpoint</a>
-          </div>
-          <a href="#" class="add-bp icon-add">Add Breakpoint</a>
-        </div>
-      </div>
-
-      <div class="third-content cf" role="main">
-
-        <div class="cf sizer-results" role="main">
-
-        </div>
-        <div class="section">
-          <div class="iconbg icon-link"></div>
-          <h1>Grab a link</h1>
-          <p>Enter the URL of an image-heavy page on your responsive website, one you work on, or any responsive website that uses the same <code>img</code> sources for all contexts.</p>
-        </div>
-        <div class="section">
-          <div class="iconbg icon-bp"></div>
-          <h1>Enter breakpoints</h1>
-          <p>Experiment with a few breakpoints where you might swap in an image source more appropriately sized for the available viewport.</p>
-        </div>
-        <div class="section">
-          <div class="iconbg icon-check"></div>
-          <h1>Check your results</h1>
-          <p>See how much data you could be saving by using a responsive images solution like <a href="https://github.com/scottjehl/picturefill">Picturefill</a>. <a href="https://twitter.com/Real_CSS_Tricks">Chris Coyier</a> has a guide to <a href="http://css-tricks.com/which-responsive-images-solution-should-you-use/">choosing the best solution</a> for your project.</p>
-          <div class="arrow-down-bg">
-          </div>
-          <div class="arrow-down">
+            <a href="#" class="add-bp icon-add">Add Breakpoint</a>
           </div>
         </div>
 
-      </div>
+        <div class="third-content cf">
+
+          <div class="cf sizer-results">
+
+          </div>
+
+          <div class="section">
+            <div class="iconbg icon-link"></div>
+            <h1>Grab a link</h1>
+            <p>Enter the URL of an image-heavy page on your responsive website, one you work on, or any responsive website that uses the same <code>img</code> sources for all contexts.</p>
+          </div>
+          <div class="section">
+            <div class="iconbg icon-bp"></div>
+            <h1>Enter breakpoints</h1>
+            <p>Experiment with a few breakpoints where you might swap in an image source more appropriately sized for the available viewport.</p>
+          </div>
+          <div class="section">
+            <div class="iconbg icon-check"></div>
+            <h1>Check your results</h1>
+            <p>See how much data you could be saving by using a responsive images solution like <a href="https://github.com/scottjehl/picturefill">Picturefill</a>. <a href="https://twitter.com/Real_CSS_Tricks">Chris Coyier</a> has a guide to <a href="http://css-tricks.com/which-responsive-images-solution-should-you-use/">choosing the best solution</a> for your project.</p>
+            <div class="arrow-down-bg">
+            </div>
+            <div class="arrow-down">
+            </div>
+          </div>
+
+        </div>
+      </main>
       <footer>
         <ul class="cf">
           <li class="credits">
