@@ -27,7 +27,7 @@
     if( errorType.toLowerCase() === "breakpoint" ) {
       removeErrorMessages();
       doc.querySelector( ".breakpoint" )
-        .insertAdjacentHTML("beforebegin", '<div class="error"><p>Please enter valid breakpoint</div>');
+        .insertAdjacentHTML("beforebegin", '<div class="error"><p>Please enter valid breakpoint</p></div>');
     } else if(errorType.toLowerCase() === "url") {
       removeErrorMessages();
       doc.querySelector( ".input" )

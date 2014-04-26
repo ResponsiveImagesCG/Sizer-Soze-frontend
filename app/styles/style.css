@@ -4,27 +4,27 @@
 /*! Tablesaw - v0.1.1 - 2014-04-22
 * https://github.com/filamentgroup/tablesaw
 * Copyright (c) 2014 Filament Group; Licensed MIT */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\000038}}
 table.tablesaw {
   empty-cells: show;
   max-width: 100%;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000314}}
 .tablesaw {
   border-collapse: collapse;
   width: 100%;
 }
 
 /* Structure */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000321}}
 .tablesaw {
   border: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000327}}
 .tablesaw th,
 .tablesaw td {
   -webkit-box-sizing: border-box;
@@ -33,19 +33,19 @@ table.tablesaw {
   padding: .5em .7em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000334}}
 .tablesaw thead tr:first-child th {
   padding-top: .9em;
   padding-bottom: .7em;
 }
 
 /* Table rows have a gray bottom stroke by default */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000341}}
 .tablesaw-stack tbody tr {
   border-bottom: 1px solid #dfdfdf;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000346}}
 .tablesaw-stack td .tablesaw-cell-label,
 .tablesaw-stack th .tablesaw-cell-label {
   display: none;
@@ -54,21 +54,21 @@ table.tablesaw {
 /* Mobile first styles: Begin with the stacked presentation at narrow widths */
 @media only all {
   /* Show the table cells as a block level element */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000356}}
   .tablesaw-stack td,
   .tablesaw-stack th {
     text-align: left;
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000361}}
   .tablesaw-stack tr {
     clear: both;
     display: table-row;
   }
 
   /* Make the label elements a percentage width */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000369}}
   .tablesaw-stack td .tablesaw-cell-label,
   .tablesaw-stack th .tablesaw-cell-label {
     display: block;
@@ -78,7 +78,7 @@ table.tablesaw {
   }
 
   /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000379}}
   .tablesaw-stack th .tablesaw-cell-label-top,
   .tablesaw-stack td .tablesaw-cell-label-top {
     display: block;
@@ -86,37 +86,37 @@ table.tablesaw {
     margin: .4em 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000385}}
   .tablesaw-cell-label {
     display: block;
   }
 
   /* Avoid double strokes when stacked */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000391}}
   .tablesaw-stack tbody th.group {
     margin-top: -1px;
   }
 
   /* Avoid double strokes when stacked */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\0000397}}
   .tablesaw-stack th.group b.tablesaw-cell-label {
     display: none !important;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\000033}}
 body {
   padding: 10px;
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\000037}}
 header {
   background-color: #7f1b18;
   margin-bottom: 10px;
   padding: 30px 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000313}}
 .secondary-content,
 .fourth-content {
   background-color: #ec6a6a;
@@ -125,12 +125,12 @@ header {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000319}}
 .fourth-content {
   padding-bottom: 60px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000322}}
 .third-content {
   background-color: #f9c1bf;
   margin-bottom: 10px;
@@ -138,7 +138,7 @@ header {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000329}}
 .loading {
   margin: 0 auto;
   border-radius: 50%;
@@ -146,33 +146,33 @@ header {
   margin: 0 0 0 -5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000335}}
 .loading img {
   display: block;
   margin: 0 auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000339}}
 .loading p {
   display: block;
   margin: 0 auto;
   font-size: .9em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000344}}
 footer {
   background-color: #f4f2ef;
   margin-bottom: 10px;
   padding: 30px 50px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000349}}
 footer ul {
   max-width: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000356}}
 footer li {
   list-style-type: none;
   float: left;
@@ -184,90 +184,90 @@ footer li {
   line-height: 1.5;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000367}}
 footer li.linksources {
   line-height: 15px;
   padding: 15px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000371}}
 footer li.linksources a {
   text-decoration: none;
   color: #999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000375}}
 footer li.linksources a:hover {
   text-decoration: underline;
   color: #7f1b18;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000383}}
 footer .social {
   text-align: right;
   line-height: 60px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000387}}
 footer .social a {
   text-decoration: none;
   color: #7f1b18;
   font-size: 25px;
   margin-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\0000393}}
 footer .social a:hover {
   color: #ec6a6a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003101}}
 footer .credits h2 {
   color: #7f1b18;
   font-size: 1.5em;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003106}}
 footer .credits p {
   font-size: 1.3em;
   color: #555;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003110}}
 footer .credits p:last-child {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003114}}
 footer .ricg {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003117}}
 footer .ricg a {
   max-width: 200px;
   display: block;
   margin: 0 auto;
 }
 @media (min-width: 45em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003114}}
   footer .ricg {
     width: 20%;
     float: right;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003126}}
   footer .ricg a {
     margin: 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003131}}
 footer .ricg p {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003135}}
 footer .ricg a {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003139}}
 footer .ricg a:hover p {
   color: #7f1b18;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003143}}
 footer .ricg a:hover h4 {
   color: #7f1b18;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003149}}
 footer .ricg h4 {
   margin: 0 0 0 80px;
   font-family: Lato, sans-serif;
@@ -277,7 +277,7 @@ footer .ricg h4 {
   line-height: 24px;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003159}}
 footer .ricg p {
   margin: 0 0 0 80px;
   padding: 0;
@@ -287,7 +287,7 @@ footer .ricg p {
   font-weight: 500;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003170}}
 footer .logo {
   margin: 0;
   position: absolute;
@@ -295,7 +295,7 @@ footer .logo {
   left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003178}}
 .title {
   font-family: Lato, sans-serif;
   font-size: 5em;
@@ -306,7 +306,7 @@ footer .logo {
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003188}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003188}}
 .subtitle {
   font-family: Lato, sans-serif;
   font-size: 1em;
@@ -317,7 +317,19 @@ footer .logo {
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003198}}
+.error {
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  color: #9a2424;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003203}}
+.error > p {
+  margin: 0;
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003209}}
 .breakpoint {
   position: relative;
   opacity: 1;
@@ -327,17 +339,17 @@ footer .logo {
   max-height: 500px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003218}}
 .breakpoint.fadein {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003221}}
 .breakpoint.fadeout {
   opacity: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003224}}
 a.icon-remove {
   display: block;
   position: absolute;
@@ -349,17 +361,17 @@ a.icon-remove {
   height: 1.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003223}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003234}}
 .breakpoint:first-child a.icon-remove {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003226}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003237}}
 a.icon-remove:active {
   margin-top: 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003229}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003240}}
 a.add-bp {
   color: #7f1b18;
   display: block;
@@ -371,13 +383,13 @@ a.add-bp {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003250}}
 a.add-bp:active {
   position: relative;
   top: 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003254}}
 .get-results {
   background-color: #9a2424;
   background-position: center center;
@@ -393,7 +405,7 @@ a.add-bp:active {
   width: 5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003269}}
 .logo {
   margin: 50px auto 20px;
   width: 50px;
@@ -405,13 +417,13 @@ a.add-bp:active {
   border-radius: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003268}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003279}}
 .section {
   float: left;
   width: 33%;
   padding: 25px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003273}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003284}}
 .section .iconbg {
   width: 80px;
   height: 80px;
@@ -421,7 +433,7 @@ a.add-bp:active {
   border-radius: 40px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003282}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003293}}
 .section .iconbg i {
   font-size: 41px;
   color: #7f1b18;
@@ -429,7 +441,7 @@ a.add-bp:active {
   top: 20px;
   left: 23px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003291}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003302}}
 .section h1 {
   font-family: Lato, sans-serif;
   font-size: 25px;
@@ -439,7 +451,7 @@ a.add-bp:active {
   position: relative;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003312}}
 .section p {
   padding: 0 25px;
   font-family: Lato, sans-serif;
@@ -448,7 +460,7 @@ a.add-bp:active {
   color: #7f1b18;
   line-height: 1.5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003321}}
 .section .arrow-down-bg {
   width: 0;
   height: 0;
@@ -461,7 +473,7 @@ a.add-bp:active {
   margin-left: -50px;
   z-index: 999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003334}}
 .section .arrow-down {
   width: 0;
   height: 0;
@@ -475,11 +487,11 @@ a.add-bp:active {
   z-index: 1000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003348}}
 .sizer-results {
   font-family: Lato, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003351}}
 .sizer-results h1 {
   font-family: Lato, sans-serif;
   font-size: 25px;
@@ -490,12 +502,12 @@ a.add-bp:active {
   text-align: center;
 }
 @media (max-width: 44.9375em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\00003103}}
   .sizer-results .tablesaw-stack thead td,
   .sizer-results .tablesaw-stack thead th {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\00003107}}
   .sizer-results .tablesaw-stack tbody td,
   .sizer-results .tablesaw-stack tbody th {
     clear: left;
@@ -504,16 +516,16 @@ a.add-bp:active {
   }
 }
 @media (min-width: 45em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003348}}
   .sizer-results {
     /* Show the table header rows */
     /* Hide the labels in each cell */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\00003115}}
   .sizer-results .tablesaw-stack tr {
     display: table-row;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\00003122}}
   .sizer-results .tablesaw-stack td,
   .sizer-results .tablesaw-stack th,
   .sizer-results .tablesaw-stack thead td,
@@ -521,38 +533,38 @@ a.add-bp:active {
     display: table-cell;
     margin: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/libs\/_tablesaw\.stackonly\.scss}line{font-family:\00003128}}
   .sizer-results .tablesaw-stack td .tablesaw-cell-label,
   .sizer-results .tablesaw-stack th .tablesaw-cell-label {
     display: none !important;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003363}}
 .sizer-results .tablesaw-stack tbody tr {
   border-color: #ec6a6a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003367}}
 .sizer-results table {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003370}}
 .sizer-results table td, .sizer-results table th {
   padding: .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003374}}
 .sizer-results table th {
   font-weight: bold;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003378}}
 .sizer-results table tbody {
   border-top: 1px solid #ec6a6a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003381}}
 .sizer-results table td {
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003384}}
 .sizer-results table td b {
   display: table-cell;
   float: left;
@@ -560,48 +572,48 @@ a.add-bp:active {
   vertical-align: bottom;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003391}}
 .sizer-results table td:last-child {
   color: #9a2424;
   font-weight: bold;
   font-size: 1.4em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003396}}
 .sizer-results table td:last-child b {
   color: #333;
   font-size: .7em;
 }
 @media (min-width: 45em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003404}}
   .sizer-results table td {
     text-align: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003407}}
   .sizer-results table thead {
     border-bottom: 1px solid #ec6a6a;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003410}}
   .sizer-results table tbody {
     border-top: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003402}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003413}}
   .sizer-results table thead tr th {
     font-size: .9em;
     padding-bottom: .25em !important;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003406}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003417}}
   .sizer-results table thead th:last-child {
     text-align: right;
   }
 }
 
 @media (min-width: 45em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003413}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003424}}
   .sizer-results table td:last-child {
     text-align: right;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003417}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003428}}
 .input {
   padding: 15px 30px;
   margin: 15px 0 10px;
@@ -611,7 +623,7 @@ a.add-bp:active {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003426}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003437}}
 .url {
   width: 100%;
   padding: 0;
@@ -624,7 +636,7 @@ a.add-bp:active {
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003438}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003449}}
 .section-title {
   font-family: Lato, sans-serif;
   font-size: 25px;
@@ -634,12 +646,12 @@ a.add-bp:active {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003447}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003458}}
 .breakpoints {
   padding: 20px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003451}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003462}}
 .breakpoint {
   width: 23%;
   margin-right: 2%;
@@ -648,12 +660,12 @@ a.add-bp:active {
   background-color: #f49f9f;
   border-radius: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003459}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003470}}
 .breakpoint .inner {
   margin: 20px 20px;
   padding: 0 0 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003464}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003475}}
 .breakpoint h3 {
   font-family: Lato, sans-serif;
   font-size: 15px;
@@ -663,14 +675,14 @@ a.add-bp:active {
   text-align: left;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003473}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003484}}
 .breakpoint h3 i {
   position: absolute;
   right: 0;
   top: 0;
   color: #ed8484;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003481}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003492}}
 .breakpoint .input {
   padding: 5px 10px;
   box-sizing: border-box;
@@ -678,7 +690,7 @@ a.add-bp:active {
   border: 1px #7f1b18 solid;
   border-radius: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003489}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003500}}
 .breakpoint input {
   width: 100%;
   font-size: 18px;
@@ -689,40 +701,40 @@ a.add-bp:active {
   text-align: right;
   border: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003500}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003511}}
 .breakpoint select {
   float: right;
   font-size: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003505}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003516}}
 .breakpoint:hover i {
   color: #9a2424;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003509}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003520}}
 .breakpoint.new {
   background-color: transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003514}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003525}}
 .breakpoint.new h3 a {
   color: #bf3939;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003518}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003529}}
 .breakpoint.new h3 a:hover {
   color: #7f1b18;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003521}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003532}}
 .breakpoint.new h3 a:hover i {
   color: #7f1b18;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003527}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003538}}
 .breakpoint.new h3 i {
   float: left;
   color: #bf3939;
   position: static;
   margin-right: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/wilto\/Sites\/_RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003535}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/anselm\/localhost\/RICG\/Sizer-Soze-frontend\/app\/styles\/style\.scss}line{font-family:\00003546}}
 .breakpoint.new h3:hover i {
   color: inherit;
 }
