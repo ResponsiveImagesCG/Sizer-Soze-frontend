@@ -16,18 +16,41 @@
       var field = amountInputs[i];
       if( !re.test(field.value) ) {
         field.focus();
-        alert(field.value + " is not a valid breakpoint");
+        insertErrorMessage( "breakpoint" );
         return false;
       }
     }
     return true;
   };
 
+  var insertErrorMessage = function( errorType ) {
+    if( errorType.toLowerCase() === "breakpoint" ) {
+      removeErrorMessages();
+      doc.querySelector( ".breakpoint" )
+        .insertAdjacentHTML("beforebegin", '<div class="error"><p>Please enter valid breakpoint</div>');
+    } else if(errorType.toLowerCase() === "url") {
+      removeErrorMessages();
+      doc.querySelector( ".input" )
+        .insertAdjacentHTML("beforebegin", '<div class="error"><p>Please enter URL</p></div>');
+    }
+  };
+
+  var removeErrorMessages = function() {
+    var errorMessages = doc.querySelectorAll( ".error" );
+    if( errorMessages ) {
+      while( errorMessages.length ) {
+        errorMessages[0].remove();
+        errorMessages = doc.querySelectorAll( ".error" );
+      }
+    }
+  };
+
   requestBtn.addEventListener( "click", function(e) {
-    if ( !urlInput.value ) {
-      alert("Please enter a URL");
+    if( !urlInput.value ) {
+      insertErrorMessage( "url" );
       urlInput.focus();
     } else if( urlInput.value && bpFieldsAreValid() ) {
+      removeErrorMessages();
       sizerSoze.sizerTime({
         loading: "images/ajax-loader.gif"
       });
@@ -46,10 +69,11 @@
   });
 
   urlInput.addEventListener( "keyup" , function( e ){
-    if ( e.which === 13 && !urlInput.value ) {
-      alert("Please enter a URL");
+    if( e.which === 13 && !urlInput.value ) {
+      insertErrorMessage( "url" );
       urlInput.focus();
     } else if( e.which === 13 && urlInput.value && bpFieldsAreValid() ) {
+      removeErrorMessages();
       sizerSoze.sizerTime({
         loading: "images/ajax-loader.gif"
       });
