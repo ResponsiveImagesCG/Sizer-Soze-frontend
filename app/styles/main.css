@@ -1,4 +1,1035 @@
-/* line 1, _base.sass */
-* {
+/*
+Goldilocks Approach to Responsive Web Design Boilerplate
+
+Author: Design by Front - @designbyfront
+Version: 0.1
+URL: http://www.goldilocksapproach.com
+----------------------------------------------------------------------------------------
+
+CONTENTS - GLOBAL.CSS
+-----------------------------------------
+1. RESET
+2. ROOT
+3. CORE TYPOGRAPHY
+4. LINKS
+5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+7. BROWSER AND NON-SEMANTIC STYLING
+
+CONTENTS - LAYOUT.CSS
+-----------------------------------------
+8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+
+*/
+/* 1. RESET
+----------------------------------------------------------------------------------------*/
+/* line 41, _global.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 50, _global.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* 2. ROOT
+----------------------------------------------------------------------------------------*/
+/* line 57, _global.scss */
+html {
+  overflow-y: scroll;
+  background: #FFF;
+}
+
+/* /ht Ethan Marcotte - http://front.ie/l8rJaA */
+/* line 66, _global.scss */
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+/* line 73, _global.scss */
+.ie6 img.full,
+.ie6 object.full,
+.ie6 embed, .ie6
+video {
+  width: 100%;
+}
+
+/*
+ * Apply border-box as standard box-model for all elements
+ */
+/* line 83, _global.scss */
+*,
+*:before,
+*:after {
   box-sizing: border-box;
+}
+
+/* 3. CORE TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+/* line 90, _global.scss */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1em;
+  line-height: 1.618em;
+  color: #333;
+}
+
+/* line 102, _global.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.809em;
+  line-height: 1em;
+}
+
+/* line 111, _global.scss */
+p,
+ul,
+ol,
+dl,
+blockquote {
+  max-width: 30em;
+  /* Optimal width for long-form text */
+  margin-bottom: 1.618em;
+  line-height: 1.618em;
+  font-size: 1em;
+}
+
+/* line 118, _global.scss */
+ul {
+  list-style-type: disc;
+  margin-left: 1.618em;
+}
+
+/* line 123, _global.scss */
+ol {
+  list-style-type: decimal;
+  margin-left: 1.618em;
+}
+
+/* line 129, _global.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 136, _global.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 141, _global.scss */
+i,
+em {
+  font-style: italic;
+}
+
+/* line 145, _global.scss */
+small {
+  font-size: 80%;
+}
+
+/* 4. LINKS
+----------------------------------------------------------------------------------------*/
+/* line 153, _global.scss */
+a,
+a:visited {
+  outline: none;
+  text-decoration: underline;
+  color: #d80d07;
+}
+
+/* line 159, _global.scss */
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 164, _global.scss */
+a:active {
+  outline: none;
+}
+
+/* 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+/* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+----------------------------------------------------------------------------------------*/
+/* line 174, _global.scss */
+#container {
+  max-width: 30em;
+  margin: auto;
+  padding: 0;
+}
+
+/* line 180, _global.scss */
+aside {
+  width: 100%;
+}
+
+/* 7. BROWSER AND NON-SEMANTIC STYLING
+----------------------------------------------------------------------------------------*/
+/* line 188, _global.scss */
+.cf:before,
+.cf:after {
+  content: "";
+  display: block;
+}
+
+/* line 193, _global.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 197, _global.scss */
+.ie6 .cf {
+  zoom: 1;
+}
+
+/*! Tablesaw - v0.1.1 - 2014-04-22
+* https://github.com/filamentgroup/tablesaw
+* Copyright (c) 2014 Filament Group; Licensed MIT */
+/*! Tablesaw - v0.1.1 - 2014-04-22
+* https://github.com/filamentgroup/tablesaw
+* Copyright (c) 2014 Filament Group; Licensed MIT */
+/* line 8, libs/_tablesaw.stackonly.scss */
+table.tablesaw {
+  empty-cells: show;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* line 14, libs/_tablesaw.stackonly.scss */
+.tablesaw {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Structure */
+/* line 21, libs/_tablesaw.stackonly.scss */
+.tablesaw {
+  border: 0;
+  padding: 0;
+}
+
+/* line 27, libs/_tablesaw.stackonly.scss */
+.tablesaw th,
+.tablesaw td {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: .5em .7em;
+}
+
+/* line 34, libs/_tablesaw.stackonly.scss */
+.tablesaw thead tr:first-child th {
+  padding-top: .9em;
+  padding-bottom: .7em;
+}
+
+/* Table rows have a gray bottom stroke by default */
+/* line 41, libs/_tablesaw.stackonly.scss */
+.tablesaw-stack tbody tr {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+/* line 46, libs/_tablesaw.stackonly.scss */
+.tablesaw-stack td .tablesaw-cell-label,
+.tablesaw-stack th .tablesaw-cell-label {
+  display: none;
+}
+
+/* Mobile first styles: Begin with the stacked presentation at narrow widths */
+@media only all {
+  /* Show the table cells as a block level element */
+  /* line 56, libs/_tablesaw.stackonly.scss */
+  .tablesaw-stack td,
+  .tablesaw-stack th {
+    text-align: left;
+    display: block;
+  }
+
+  /* line 61, libs/_tablesaw.stackonly.scss */
+  .tablesaw-stack tr {
+    clear: both;
+    display: table-row;
+  }
+
+  /* Make the label elements a percentage width */
+  /* line 69, libs/_tablesaw.stackonly.scss */
+  .tablesaw-stack td .tablesaw-cell-label,
+  .tablesaw-stack th .tablesaw-cell-label {
+    display: block;
+    padding: 0 .6em 0 0;
+    min-width: 30%;
+    display: inline-block;
+  }
+
+  /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
+  /* line 79, libs/_tablesaw.stackonly.scss */
+  .tablesaw-stack th .tablesaw-cell-label-top,
+  .tablesaw-stack td .tablesaw-cell-label-top {
+    display: block;
+    padding: .4em 0;
+    margin: .4em 0;
+  }
+
+  /* line 85, libs/_tablesaw.stackonly.scss */
+  .tablesaw-cell-label {
+    display: block;
+  }
+
+  /* Avoid double strokes when stacked */
+  /* line 91, libs/_tablesaw.stackonly.scss */
+  .tablesaw-stack tbody th.group {
+    margin-top: -1px;
+  }
+
+  /* Avoid double strokes when stacked */
+  /* line 97, libs/_tablesaw.stackonly.scss */
+  .tablesaw-stack th.group b.tablesaw-cell-label {
+    display: none !important;
+  }
+}
+/* 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+----------------------------------------------------------------------------------------*/
+/* line 3, _layout.scss */
+#container {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 60em;
+}
+
+/* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+----------------------------------------------------------------------------------------*/
+@media screen and (max-width: 45em) {
+  /* line 13, _layout.scss */
+  .breakpoint {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2%;
+  }
+
+  /* line 19, _layout.scss */
+  .section {
+    width: 100%;
+    margin-bottom: 2%;
+    padding: 10px 0px;
+  }
+
+  /* line 25, _layout.scss */
+  .section p {
+    margin-bottom: 0;
+  }
+
+  /* line 29, _layout.scss */
+  footer li {
+    width: 100%;
+    margin-bottom: 2%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  /* line 36, _layout.scss */
+  footer li.social {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 20em) {
+  /* line 43, _layout.scss */
+  #container {
+    width: 100%;
+  }
+
+  /* line 47, _layout.scss */
+  header {
+    padding: 30px 15px;
+  }
+
+  /* line 51, _layout.scss */
+  .secondary-content {
+    padding: 30px 15px;
+  }
+
+  /* line 55, _layout.scss */
+  .third-content {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 30px 15px;
+    background-color: #f9c1bf;
+  }
+
+  /* line 62, _layout.scss */
+  footer {
+    padding: 30px 15px;
+  }
+}
+/*
+ * Main CSS of Sizer Soze
+ *
+ */
+/*
+ * Variables
+ */
+/*
+ * Layout stuff
+ */
+/* line 18, _style.scss */
+body {
+  padding: 10px;
+  margin: 0;
+}
+
+/* line 23, _style.scss */
+header {
+  background-color: #7f1b18;
+  margin-bottom: 10px;
+  padding: 30px 20px;
+}
+
+/* line 30, _style.scss */
+.secondary-content,
+.fourth-content {
+  background-color: #ec6a6a;
+  margin-bottom: 10px;
+  padding: 30px 50px 10px;
+  position: relative;
+}
+
+/* line 37, _style.scss */
+.fourth-content {
+  padding-bottom: 60px;
+}
+
+/* line 41, _style.scss */
+.third-content {
+  background-color: #f9c1bf;
+  margin-bottom: 10px;
+  padding: 30px 50px;
+  position: relative;
+}
+
+/* line 48, _style.scss */
+.loading {
+  margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 0 0 -5px;
+}
+
+/* line 55, _style.scss */
+.loading img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 60, _style.scss */
+.loading p {
+  display: block;
+  margin: 0 auto;
+  font-size: .9em;
+}
+
+/* line 66, _style.scss */
+footer {
+  background-color: #f4f2ef;
+  margin-bottom: 10px;
+  padding: 30px 50px;
+}
+/* line 71, _style.scss */
+footer ul {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 78, _style.scss */
+footer li {
+  list-style-type: none;
+  float: left;
+  width: 33%;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: #999;
+  line-height: 1.5;
+  text-align: center;
+}
+/* line 89, _style.scss */
+footer li.linksources {
+  line-height: 15px;
+  padding: 15px 0;
+}
+/* line 93, _style.scss */
+footer li.linksources a {
+  text-decoration: none;
+  color: #999;
+}
+/* line 97, _style.scss */
+footer li.linksources a:hover {
+  text-decoration: underline;
+  color: #7f1b18;
+}
+/* line 105, _style.scss */
+footer .social {
+  text-align: right;
+  line-height: 60px;
+}
+/* line 109, _style.scss */
+footer .social a {
+  text-decoration: none;
+  color: #7f1b18;
+  font-size: 25px;
+  margin-right: 10px;
+}
+/* line 115, _style.scss */
+footer .social a:hover {
+  color: #ec6a6a;
+}
+/* line 122, _style.scss */
+footer .credits h2 {
+  color: #7f1b18;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* line 128, _style.scss */
+footer .credits p {
+  font-size: 1.3em;
+  color: #555;
+}
+/* line 133, _style.scss */
+footer .credits p:last-child {
+  margin-bottom: 0;
+}
+/* line 138, _style.scss */
+footer .ricg {
+  position: relative;
+}
+/* line 141, _style.scss */
+footer .ricg a {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 45em) {
+  /* line 138, _style.scss */
+  footer .ricg {
+    width: 20%;
+    float: right;
+  }
+  /* line 151, _style.scss */
+  footer .ricg a {
+    margin: 0;
+  }
+}
+/* line 156, _style.scss */
+footer .ricg p {
+  margin: 0;
+}
+/* line 160, _style.scss */
+footer .ricg a {
+  text-decoration: none;
+}
+/* line 164, _style.scss */
+footer .ricg a:hover p {
+  color: #7f1b18;
+}
+/* line 168, _style.scss */
+footer .ricg a:hover h4 {
+  color: #7f1b18;
+}
+/* line 174, _style.scss */
+footer .ricg h4 {
+  margin: 0 0 0 80px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  line-height: 24px;
+  text-align: left;
+}
+/* line 184, _style.scss */
+footer .ricg p {
+  margin: 0 0 0 80px;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+  color: #999;
+  font-weight: 500;
+  text-align: left;
+}
+/* line 195, _style.scss */
+footer .logo {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 203, _style.scss */
+.title {
+  font-family: "Lato", sans-serif;
+  font-size: 5em;
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+/* line 213, _style.scss */
+.subtitle {
+  margin: 0 0 50px;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  font-weight: 100;
+  color: #f4f2ef;
+  text-transform: uppercase;
+}
+
+/* line 223, _style.scss */
+.error {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #9a2424;
+}
+/* line 228, _style.scss */
+.error > p {
+  margin: 0;
+  line-height: 1;
+}
+
+/* line 234, _style.scss */
+.breakpoint {
+  position: relative;
+  max-height: 500px;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease, max-height 0.3s ease;
+  -moz-transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease, max-height 0.3s ease;
+  transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease, max-height 0.3s ease;
+}
+
+/* line 244, _style.scss */
+.breakpoint.fadein {
+  opacity: 1;
+}
+
+/* line 248, _style.scss */
+.breakpoint.fadeout {
+  opacity: 0;
+}
+
+/* line 252, _style.scss */
+a.icon-remove {
+  display: block;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  width: 1.75em;
+  height: 1.75em;
+  overflow: hidden;
+  text-indent: -999px;
+}
+
+/* line 263, _style.scss */
+.breakpoint:first-child a.icon-remove {
+  display: none;
+}
+
+/* line 267, _style.scss */
+a.icon-remove:active {
+  margin-top: 1px;
+}
+
+/* line 271, _style.scss */
+a.add-bp {
+  display: block;
+  float: left;
+  clear: both;
+  margin: 1em 0 0.5em 0;
+  padding: 0.1em 0 0.5em 2em;
+  font-family: "Lato", sans-serif;
+  color: #7f1b18;
+  text-decoration: none;
+}
+
+/* line 282, _style.scss */
+a.add-bp:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 287, _style.scss */
+.get-results {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5em;
+  height: 100%;
+  margin: 0;
+  background-color: #9a2424;
+  background-position: center center;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+/* line 302, _style.scss */
+.logo {
+  margin: 50px auto 20px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/logo.jpg");
+  background-size: 100%;
+  text-indent: -9999px;
+  border: 4px solid #fff;
+  border-radius: 5px;
+}
+
+/* line 313, _style.scss */
+.section {
+  float: left;
+  width: 33%;
+  padding: 25px 0;
+}
+/* line 318, _style.scss */
+.section .iconbg {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 25px auto 0;
+  background-color: #fff;
+  background-position: center center;
+  border-radius: 40px;
+}
+/* line 327, _style.scss */
+.section .iconbg i {
+  position: relative;
+  top: 20px;
+  left: 23px;
+  font-size: 41px;
+  color: #7f1b18;
+}
+/* line 336, _style.scss */
+.section h1 {
+  margin: 25px 0 20px;
+  position: relative;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #640f09;
+}
+/* line 346, _style.scss */
+.section p {
+  padding: 0 25px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #7f1b18;
+  line-height: 1.5;
+}
+/* line 355, _style.scss */
+.section .arrow-down-bg {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  z-index: 999;
+  width: 0;
+  height: 0;
+  margin-left: -50px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #fff;
+}
+/* line 368, _style.scss */
+.section .arrow-down {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  z-index: 1000;
+  width: 0;
+  height: 0;
+  margin-left: -35px;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 35px solid #f9c1bf;
+}
+
+/* line 382, _style.scss */
+.sizer-results {
+  font-family: "Lato", sans-serif;
+}
+/* line 385, _style.scss */
+.sizer-results h1 {
+  position: relative;
+  margin: 25px 0 20px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #640f09;
+}
+@media (max-width: 44.9375em) {
+  /* line 103, libs/_tablesaw.stackonly.scss */
+  .sizer-results .tablesaw-stack thead td,
+  .sizer-results .tablesaw-stack thead th {
+    display: none;
+  }
+  /* line 107, libs/_tablesaw.stackonly.scss */
+  .sizer-results .tablesaw-stack tbody td,
+  .sizer-results .tablesaw-stack tbody th {
+    clear: left;
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 45em) {
+  /* line 382, _style.scss */
+  .sizer-results {
+    /* Show the table header rows */
+    /* Hide the labels in each cell */
+  }
+  /* line 115, libs/_tablesaw.stackonly.scss */
+  .sizer-results .tablesaw-stack tr {
+    display: table-row;
+  }
+  /* line 122, libs/_tablesaw.stackonly.scss */
+  .sizer-results .tablesaw-stack td,
+  .sizer-results .tablesaw-stack th,
+  .sizer-results .tablesaw-stack thead td,
+  .sizer-results .tablesaw-stack thead th {
+    display: table-cell;
+    margin: 0;
+  }
+  /* line 128, libs/_tablesaw.stackonly.scss */
+  .sizer-results .tablesaw-stack td .tablesaw-cell-label,
+  .sizer-results .tablesaw-stack th .tablesaw-cell-label {
+    display: none !important;
+  }
+}
+/* line 397, _style.scss */
+.sizer-results .tablesaw-stack tbody tr {
+  border-color: #ec6a6a;
+}
+/* line 401, _style.scss */
+.sizer-results table {
+  width: 100%;
+}
+/* line 404, _style.scss */
+.sizer-results table td, .sizer-results table th {
+  padding: 0.5em;
+}
+/* line 408, _style.scss */
+.sizer-results table th {
+  font-weight: bold;
+  text-align: left;
+}
+/* line 413, _style.scss */
+.sizer-results table tbody {
+  border-top: 1px solid #ec6a6a;
+}
+/* line 417, _style.scss */
+.sizer-results table td {
+  text-align: right;
+}
+/* line 421, _style.scss */
+.sizer-results table td b {
+  display: table-cell;
+  float: left;
+  clear: left;
+  vertical-align: bottom;
+  text-align: left;
+}
+/* line 429, _style.scss */
+.sizer-results table td:last-child {
+  color: #9a2424;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+/* line 435, _style.scss */
+.sizer-results table td:last-child b {
+  color: #333;
+  font-size: 0.7em;
+}
+@media (min-width: 45em) {
+  /* line 443, _style.scss */
+  .sizer-results table td {
+    text-align: left;
+  }
+  /* line 447, _style.scss */
+  .sizer-results table thead {
+    border-bottom: 1px solid #ec6a6a;
+  }
+  /* line 451, _style.scss */
+  .sizer-results table tbody {
+    border-top: none;
+  }
+  /* line 455, _style.scss */
+  .sizer-results table thead tr th {
+    font-size: 0.9em;
+    padding-bottom: 0.25em !important;
+  }
+  /* line 460, _style.scss */
+  .sizer-results table thead th:last-child {
+    text-align: right;
+  }
+}
+
+@media (min-width: 45em) {
+  /* line 468, _style.scss */
+  .sizer-results table td:last-child {
+    text-align: right;
+  }
+}
+/* line 473, _style.scss */
+.input {
+  position: relative;
+  margin: 15px 0 10px;
+  padding: 15px 30px;
+  background-color: #fff;
+  border: 5px #9a2424 solid;
+  border-radius: 5px;
+}
+
+/* line 482, _style.scss */
+.url {
+  width: 100%;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+}
+
+/* line 493, _style.scss */
+.section-title {
+  margin: 20px 0;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #9a2424;
+}
+
+/* line 502, _style.scss */
+.breakpoints {
+  padding: 20px 0;
+}
+
+/* line 506, _style.scss */
+.breakpoint {
+  float: left;
+  width: 23%;
+  margin-right: 2%;
+  margin-top: 0.6em;
+  background-color: #f49f9f;
+  border-radius: 5px;
+}
+/* line 514, _style.scss */
+.breakpoint .inner {
+  margin: 20px 20px;
+  padding: 0 0 20px;
+}
+/* line 519, _style.scss */
+.breakpoint h3 {
+  position: relative;
+  margin: 0 0 10px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #9a2424;
+}
+/* line 528, _style.scss */
+.breakpoint h3 i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ed8484;
+}
+/* line 536, _style.scss */
+.breakpoint .input {
+  margin: 5px 0;
+  padding: 5px 10px;
+  border: 1px #7f1b18 solid;
+  border-radius: 5px;
+}
+/* line 543, _style.scss */
+.breakpoint input {
+  width: 100%;
+  text-align: right;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  outline: 0;
+  border: 0;
+}
+/* line 553, _style.scss */
+.breakpoint select {
+  float: right;
+  font-size: 15px;
+}
+/* line 558, _style.scss */
+.breakpoint:hover i {
+  color: #9a2424;
+}
+/* line 562, _style.scss */
+.breakpoint.new {
+  background-color: transparent;
+}
+/* line 567, _style.scss */
+.breakpoint.new h3 a {
+  color: #bf3939;
+  text-decoration: none;
+}
+/* line 571, _style.scss */
+.breakpoint.new h3 a:hover {
+  color: #7f1b18;
+}
+/* line 574, _style.scss */
+.breakpoint.new h3 a:hover i {
+  color: #7f1b18;
+}
+/* line 580, _style.scss */
+.breakpoint.new h3 i {
+  float: left;
+  color: #bf3939;
+  position: static;
+  margin-right: 5px;
+}
+/* line 588, _style.scss */
+.breakpoint.new h3:hover i {
+  color: inherit;
 }
