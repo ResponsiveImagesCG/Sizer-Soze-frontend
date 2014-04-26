@@ -67,7 +67,7 @@
 
     //HEAD
     summary2 = arr[0].summary;
-    header.innerHTML = "Results for " + summary2["url"];
+    header.innerHTML = "Results for " + summary2.url;
     tr = document.createElement( "tr" );
     for( var k in headers ){
       th = document.createElement( "th" );
@@ -95,8 +95,8 @@
       }
       //Let's show a percentage here too
       td = document.createElement( "td" );
-      if (summary["image_data"] !== 0 && summary["resize"] !== 0) {
-        td.innerHTML = Math.floor(( summary["resize"] / summary["image_data"] ) * 100) + "%";
+      if (summary.image_data !== 0 && summary.resize !== 0) {
+        td.innerHTML = Math.floor(( summary.resize / summary.image_data ) * 100) + "%";
       } else {
         td.innerHTML = "0%";
       }
