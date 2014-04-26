@@ -28,9 +28,38 @@ module.exports = function (grunt) {
           debugInfo: true
         }
       }
-    }
+    },
+    watch: {
+      scripts: {
+        files: ['app/**/*.js','app/**/*.scss'],
+        tasks: ['jshint', 'compass'],
+        options: {
+          spawn: false,
+        },
+      },
+    },
+    jshint: {
+      all: [
+        'Gruntfile.js',
+        'test.js',
+        'app/scripts/*.js'
+      ]
+    },
+    modernizr: {
+      dist: {
+        devFile: 'app/components/modernizr/modernizr.js',
+        outputFile: 'app/scripts/libs/modernizr.custom.min.js',
 
+        extra: {
+          shiv: true,
+          mq: true
+        },
+
+        // Minify
+        uglify: true,
+      }
+    }
   }); // initConfig
 
-  grunt.registerTask('default', ['compass:server']);
+  grunt.registerTask('default', ['jshint', 'compass:server', 'modernizr']);
 };
