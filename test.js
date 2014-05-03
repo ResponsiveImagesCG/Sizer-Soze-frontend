@@ -10,7 +10,7 @@ var request = require( "request" ),
   req_url = "";
 
 params.viewport = params.viewport.join( "," );
-req_url = "http://api.sizersoze.org/api/?" + qs.stringify( params );
+req_url = "http://api1.sizersoze.org/api/?" + qs.stringify( params );
 
 request( req_url, function( err, res, body ) {
   console.log( res.statusCode + ": " + res.body );

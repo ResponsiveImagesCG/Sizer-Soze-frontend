@@ -4,7 +4,7 @@
   if( !("querySelectorAll" in doc ) ){
     return;
   }
-  // http://api.sizersoze.org/api/?viewport=680,1260&target_url=blog.cloudfour.com&ignore_invisibles=0
+  // http://api1.sizersoze.org/api/?viewport=680,1260&target_url=blog.cloudfour.com&ignore_invisibles=0
   var objToQueryStr = function( obj ){
     var query;
 
@@ -137,7 +137,7 @@
 
 
   var SizerSoze = function(){
-    this.apiURL = "http://api.sizersoze.org/api";
+    this.apiURL = "http://api1.sizersoze.org/api";
   };
 
   SizerSoze.prototype.gatherData = function(){
