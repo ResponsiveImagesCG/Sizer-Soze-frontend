@@ -13,29 +13,35 @@ module.exports = function (grunt) {
 
     site: siteConfig,
     pkg: grunt.file.readJSON('package.json'),
-    compass: {
-      options: {
-        sassDir: '<%= site.app %>/styles',
-        cssDir: '<%= site.app %>/styles',
-        imagesDir: '<%= site.app %>/images',
-        javascriptsDir: '<%= site.app %>/scripts',
-        fontsDir: '<%= site.app %>/styles/fonts',
-        relativeAssets: false
-      },
-      dist: {},
-      server: {
-        options: {
-          debugInfo: true
+    sass: {
+        dev: {
+          options: {
+            unixNewlines: true,
+            style: 'expanded',
+            banner: '/*! SizerSoze - MIT License - ' +
+            '<%= grunt.template.today("yyyy-mm-dd") %> */',
+            sourcemap: true
+          },
+          files: ['app/styles/*.scss'],
+          src: 'app/styles/main.scss',
+          dest: 'app/styles/main.css'
+        },
+
+        build: {
+          options: {
+            style: 'compressed',
+            banner: '/*! SizerSoze - MIT License - ' +
+            '<%= grunt.template.today("yyyy-mm-dd") %> */'
+          },
+          files: ['app/styles/*.scss'],
+          src: 'app/styles/main.scss',
+          dest: 'app/styles/main.min.css',
         }
-      }
     },
     watch: {
       scripts: {
         files: ['app/**/*.js','app/**/*.scss'],
-        tasks: ['jshint', 'compass'],
-        options: {
-          spawn: false,
-        },
+        tasks: ['jshint', 'sass:dev']
       },
     },
     jshint: {
@@ -61,5 +67,6 @@ module.exports = function (grunt) {
     }
   }); // initConfig
 
-  grunt.registerTask('default', ['jshint', 'compass:server', 'modernizr']);
+  grunt.registerTask('default', ['jshint', 'sass:dev', 'modernizr']);
+  grunt.registerTask('build', ['jshint', 'sass:build', 'modernizr']);
 };

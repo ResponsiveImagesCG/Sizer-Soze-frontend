@@ -1,14 +1,31 @@
-@import "libs/tablesaw.stackonly";
+/*
+ * Main CSS of Sizer Soze
+ *
+ */
+
+/*
+ * Variables
+ */
+
+$background: #7f1b18;
+$light-warm-grey: #f4f2ef;
+$main-font-family: 'Lato', sans-serif;
+
+/*
+ * Layout stuff
+ */
 
 body {
   padding: 10px;
   margin: 0;
 }
+
 header {
-  background-color: #7f1b18;
+  background-color: $background;
   margin-bottom: 10px;
   padding: 30px 20px;
 }
+
 .secondary-content,
 .fourth-content {
   background-color: #ec6a6a;
@@ -16,9 +33,11 @@ header {
   padding: 30px 50px 10px;
   position: relative;
 }
+
 .fourth-content {
   padding-bottom: 60px;
 }
+
 .third-content {
   background-color: #f9c1bf;
   margin-bottom: 10px;
@@ -32,17 +51,20 @@ header {
   text-align: center;
   margin: 0 0 0 -5px;
 }
+
 .loading img {
   display: block;
   margin: 0 auto;
 }
+
 .loading p {
   display: block;
   margin: 0 auto;
   font-size: .9em;
 }
+
 footer {
-  background-color: #f4f2ef;
+  background-color: $light-warm-grey;
   margin-bottom: 10px;
   padding: 30px 50px;
 
@@ -57,9 +79,9 @@ footer {
     list-style-type: none;
     float: left;
     width: 33%;
-    font-family: Lato, sans-serif;
+    font-family: $main-font-family;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 400;
     color: #999;
     line-height: 1.5;
     text-align: center;
@@ -74,7 +96,7 @@ footer {
 
         &:hover {
           text-decoration: underline;
-          color: #7f1b18;
+          color: $background;
         }
       }
     }
@@ -86,7 +108,7 @@ footer {
 
     a {
       text-decoration: none;
-      color: #7f1b18;
+      color: $background;
       font-size: 25px;
       margin-right: 10px;
 
@@ -94,39 +116,42 @@ footer {
         color: #ec6a6a;
       }
     }
-
   }
 
   .credits {
     h2 {
-      color: #7f1b18;
+      color: $background;
       font-size: 1.5em;
       font-weight: bold;
     }
+
     p {
       font-size: 1.3em;
       color: #555;
     }
+
     p:last-child {
       margin-bottom: 0;
     }
   }
+
   .ricg {
     position: relative;
 
     a {
-    max-width: 200px;
-    display: block;
-    margin: 0 auto;
+      max-width: 200px;
+      display: block;
+      margin: 0 auto;
     }
 
-    @media ( min-width: 45em ) {
-        width: 20%;
-        float: right;
-        a {
-          margin: 0;
-        }
+    @media (min-width: 45em) {
+      width: 20%;
+      float: right;
+
+      a {
+        margin: 0;
       }
+    }
 
     p {
       margin: 0;
@@ -137,20 +162,20 @@ footer {
 
       &:hover {
         p {
-          color: #7f1b18;
+          color: $background;
         }
 
         h4 {
-          color: #7f1b18;
+          color: $background;
         }
       }
     }
 
     h4 {
       margin: 0 0 0 80px;
-      font-family: Lato, sans-serif;
+      font-family: $main-font-family;
       font-size: 16px;
-      font-weight: 500;
+      font-weight: 400;
       color: #333;
       line-height: 24px;
       text-align: left;
@@ -160,9 +185,9 @@ footer {
       margin: 0 0 0 80px;
       padding: 0;
       font-size: 10px;
-      font-family: Lato, sans-serif;
+      font-family: $main-font-family;
       color: #999;
-      font-weight: 500;
+      font-weight: 400;
       text-align: left;
     }
   }
@@ -176,7 +201,7 @@ footer {
 }
 
 .title {
-  font-family: Lato, sans-serif;
+  font-family: $main-font-family;
   font-size: 5em;
   text-align: center;
   font-weight: 300;
@@ -186,17 +211,17 @@ footer {
 }
 
 .subtitle {
-  font-family: Lato, sans-serif;
+  margin: 0 0 50px;
+  font-family: $main-font-family;
   font-size: 1em;
   text-align: center;
   font-weight: 100;
-  color: #f4f2ef;
-  margin: 0 0 50px;
+  color: $light-warm-grey;
   text-transform: uppercase;
 }
 
 .error {
-  font-family: Lato, sans-serif;
+  font-family: $main-font-family;
   font-weight: bold;
   color: #9a2424;
 
@@ -208,62 +233,70 @@ footer {
 
 .breakpoint {
   position: relative;
+  max-height: 400px;
   opacity: 1;
 
   -webkit-transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease, max-height 0.3s ease;
-  -moz-transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease, max-height 0.3s ease;
-  transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease, max-height 0.3s ease;
-  max-height: 500px;
+     -moz-transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease, max-height 0.3s ease;
+          transition: opacity 0.5s ease, width 0.3s ease, margin 0.3s ease, max-height 0.3s ease;
 }
+
 .breakpoint.fadein {
   opacity: 1;
 }
+
 .breakpoint.fadeout {
   opacity: 0;
 }
+
 a.icon-remove {
   display: block;
   position: absolute;
-  top: .5em;
-  right: .5em;
-  text-indent: -999px;
-  overflow: hidden;
+  top: 0.5em;
+  right: 0.5em;
   width: 1.75em;
   height: 1.75em;
+  overflow: hidden;
+  text-indent: -999px;
 }
+
 .breakpoint:first-child a.icon-remove {
   display: none;
 }
+
 a.icon-remove:active {
   margin-top: 1px;
 }
+
 a.add-bp {
-  color: #7f1b18;
   display: block;
   float: left;
-  font-family: Lato, sans-serif;
   clear: both;
-  margin: 1em 0 .5em 0;
-  padding: .1em 0 .5em 2em;
+  margin: 1em 0 0.5em 0;
+  padding: 0.1em 0 0.5em 2em;
+  font-family: $main-font-family;
+  color: $background;
   text-decoration: none;
 }
+
 a.add-bp:active {
   position: relative;
   top: 1px;
 }
+
 .get-results {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5em;
+  height: 100%;
+  margin: 0;
   background-color: #9a2424;
   background-position: center center;
   border: none;
   color: #fff;
   cursor: pointer;
-  height: 100%;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
   text-indent: -9999px;
-  width: 5em;
 }
 
 .logo {
@@ -276,89 +309,90 @@ a.add-bp:active {
   border: 4px solid #fff;
   border-radius: 5px;
 }
+
 .section {
   float: left;
   width: 33%;
   padding: 25px 0;
 
   .iconbg {
+    position: relative;
     width: 80px;
     height: 80px;
     margin: 25px auto 0;
     background-color: #fff;
     background-position: center center;
     border-radius: 40px;
-    position: relative;
 
     i {
-      font-size: 41px;
-      color: #7f1b18;
       position: relative;
       top: 20px;
       left: 23px;
+      font-size: 41px;
+      color: $background;
     }
   }
 
   h1 {
-    font-family: Lato, sans-serif;
-    font-size: 25px;
-    font-weight: 500;
-    color: #640f09;
     margin: 25px 0 20px;
     position: relative;
     text-align: center;
+    font-family: $main-font-family;
+    font-size: 25px;
+    font-weight: 400;
+    color: #640f09;
   }
 
   p {
     padding: 0 25px;
-    font-family: Lato, sans-serif;
+    font-family: $main-font-family;
     font-size: 15px;
     font-weight: 400;
-    color: #7f1b18;
+    color: $background;
     line-height: 1.5;
   }
 
   .arrow-down-bg {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 50px solid #fff;
     position: absolute;
     top: -50px;
     left: 50%;
-    margin-left: -50px;
     z-index: 999;
+    width: 0;
+    height: 0;
+    margin-left: -50px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #fff;
   }
 
   .arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-bottom: 35px solid #f9c1bf;
     position: absolute;
     top: -35px;
     left: 50%;
-    margin-left: -35px;
     z-index: 1000;
+    width: 0;
+    height: 0;
+    margin-left: -35px;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 35px solid #f9c1bf;
   }
 }
 
 .sizer-results {
-  font-family: Lato, sans-serif;
+  font-family: $main-font-family;
 
   h1 {
-    font-family: Lato, sans-serif;
-    font-size: 25px;
-    font-weight: 500;
-    color: #640f09;
-    margin: 25px 0 20px;
     position: relative;
+    margin: 25px 0 20px;
     text-align: center;
+    font-family: $main-font-family;
+    font-size: 25px;
+    font-weight: 400;
+    color: #640f09;
   }
 
-  @include tablesaw-stack( 45em );
+  @include tablesaw-stack(45em);
 
   .tablesaw-stack tbody tr {
     border-color: #ec6a6a;
@@ -368,19 +402,22 @@ a.add-bp:active {
     width: 100%;
 
     td, th{
-      padding: .5em;
+      padding: 0.5em;
     }
 
     th {
       font-weight: bold;
       text-align: left;
     }
+
     tbody {
       border-top: 1px solid #ec6a6a;
     }
+
     td{
       text-align: right;
     }
+
     td b {
       display: table-cell;
       float: left;
@@ -388,71 +425,82 @@ a.add-bp:active {
       vertical-align: bottom;
       text-align: left;
     }
+
     td:last-child {
       color: #9a2424;
       font-weight: bold;
       font-size: 1.4em;
     }
+
     td:last-child b {
       color: #333;
-      font-size: .7em;
+      font-size: 0.7em;
     }
   }
 
-  @media ( min-width: 45em ) {
+  @media (min-width: 45em) {
     table{
       td{
         text-align: left;
       }
+
       thead {
         border-bottom: 1px solid #ec6a6a;
       }
+
       tbody {
         border-top: none;
       }
+
       thead tr th {
-        font-size: .9em;
-        padding-bottom: .25em !important;
+        font-size: 0.9em;
+        padding-bottom: 0.25em !important;
       }
+
       thead th:last-child {
         text-align: right;
       }
     }
   }
 }
-@media ( min-width: 45em ) {
+
+@media (min-width: 45em) {
   .sizer-results table td:last-child {
     text-align: right;
   }
 }
+
 .input {
-  padding: 15px 30px;
+  position: relative;
   margin: 15px 0 10px;
+  padding: 15px 30px;
+  background-color: #fff;
   border: 5px #9a2424 solid;
   border-radius: 5px;
-  background-color: #fff;
-  position: relative;
+
+  @media (max-width: 35em) {
+    padding: 15px 10px;
+  }
 }
 
 .url {
   width: 100%;
   padding: 0;
   font-size: 15px;
-  font-family: Lato, sans-serif;
+  font-family: $main-font-family;
   font-weight: 700;
-  box-sizing: border-box;
   border-radius: 5px;
   outline: 0;
   border: 0;
 }
 
 .section-title {
-  font-family: Lato, sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  color: #9a2424;
   margin: 20px 0;
   text-align: center;
+  font-family: $main-font-family;
+  font-size: 25px;
+  font-weight: 400;
+  color: #9a2424;
 }
 
 .breakpoints {
@@ -460,10 +508,10 @@ a.add-bp:active {
 }
 
 .breakpoint {
+  float: left;
   width: 23%;
   margin-right: 2%;
-  margin-top: .6em;
-  float: left;
+  margin-top: 0.6em;
   background-color: #f49f9f;
   border-radius: 5px;
 
@@ -473,13 +521,13 @@ a.add-bp:active {
   }
 
   h3 {
-    font-family: Lato, sans-serif;
+    position: relative;
+    margin: 0 0 10px;
+    text-align: left;
+    font-family: $main-font-family;
     font-size: 15px;
     font-weight: 700;
     color: #9a2424;
-    margin: 0 0 10px;
-    text-align: left;
-    position: relative;
 
     i {
       position: absolute;
@@ -490,21 +538,19 @@ a.add-bp:active {
   }
 
   .input {
-    padding: 5px 10px;
-    box-sizing: border-box;
     margin: 5px 0;
-    border: 1px #7f1b18 solid;
+    padding: 5px 10px;
+    border: 1px $background solid;
     border-radius: 5px;
   }
 
   input {
     width: 100%;
-    font-size: 18px;
-    font-family: Lato, sans-serif;
-    font-weight: 500;
-    box-sizing: border-box;
-    outline: 0;
     text-align: right;
+    font-size: 18px;
+    font-family: $main-font-family;
+    font-weight: 400;
+    outline: 0;
     border: 0;
   }
 
@@ -527,10 +573,10 @@ a.add-bp:active {
         text-decoration: none;
 
         &:hover {
-          color: #7f1b18;
+          color: $background;
 
           i {
-            color: #7f1b18;
+            color: $background;
           }
         }
       }
@@ -549,6 +595,5 @@ a.add-bp:active {
       }
     }
   }
-
 }
 

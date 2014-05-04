@@ -9,15 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles/global.css" media="all">
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles/style.css" media="all">
-    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/main.min.css" media="all">
 
     <link rel="icon" href="https://raw.githubusercontent.com/ResponsiveImagesCG/responsiveimages.org/master/img/favicon.ico">
 
     <!--[if (lt IE 9) & (!IEMobile)]>
-    <link rel="stylesheet" href="styles/layout.css" media="all">
+      <link rel="stylesheet" href="styles/main.min.css" media="all">
     <![endif]-->
 
     <script>
@@ -25,11 +23,12 @@
       window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!!t.document.createElementNS&&!!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect&&!!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"),A=function(A){var o=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];o.rel="stylesheet",o.href=e[A&&n?0:A?1:2],r.parentNode.insertBefore(o,r)},o=new t.Image;o.onerror=function(){A(!1)},o.onload=function(){A(1===o.width&&1===o.height)},o.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
       grunticon( [ "styles/grunticon/icons.data.svg.css", "styles/grunticon/icons.data.png.css", "styles/grunticon/icons.fallback.css" ] );
     </script>
-    <noscript><link href="styles/grunticon/icons.fallback.css" rel="stylesheet"></noscript>
+    <noscript>
+      <link href="styles/grunticon/icons.fallback.css" rel="stylesheet">
+    </noscript>
   </head>
   <body>
     <div id="container" class="cf">
-
       <header>
         <div class="logo">
           Responsive Images Community Group
@@ -40,7 +39,6 @@
 
       <main role="main">
         <div class="secondary-content cf">
-
           <h2 class="section-title">Enter the URL you want to check</h2>
           <div class="input">
             <input name="url" type="url" class="url" placeholder="Enter the URL you want to check." required>
@@ -53,7 +51,7 @@
               <div class="inner">
                 <h3>Breakpoint</h3>
                 <div class="input">
-                <input name="amount" type="number" value="320">
+                  <input name="amount" type="number" value="320">
                 </div>
                 <select>
                   <option value="px">px</option>
@@ -62,11 +60,12 @@
               </div>
               <a href="#" class="icon-remove icon-del">Remove Breakpoint</a>
             </div>
+
             <div class="breakpoint">
               <div class="inner">
                 <h3>Breakpoint</h3>
                 <div class="input">
-                <input name="amount" type="number" value="1280">
+                  <input name="amount" type="number" value="1280">
                 </div>
                 <select>
                   <option value="px">px</option>
@@ -82,7 +81,6 @@
         <div class="third-content cf">
 
           <div class="cf sizer-results">
-
           </div>
 
           <div class="section">
@@ -90,11 +88,13 @@
             <h1>Grab a link</h1>
             <p>Enter the URL of an image-heavy page on your responsive website, one you work on, or any responsive website that uses the same <code>img</code> sources for all contexts.</p>
           </div>
+
           <div class="section">
             <div class="iconbg icon-bp"></div>
             <h1>Enter breakpoints</h1>
             <p>Experiment with a few breakpoints where you might swap in an image source more appropriately sized for the available viewport.</p>
           </div>
+
           <div class="section">
             <div class="iconbg icon-check"></div>
             <h1>Check your results</h1>
@@ -104,9 +104,9 @@
             <div class="arrow-down">
             </div>
           </div>
-
         </div>
       </main>
+
       <footer>
         <ul class="cf">
           <li class="credits">
@@ -116,20 +116,17 @@
               and <a href="https://github.com/ResponsiveImagesCG/Sizer-Soze-frontend/graphs/contributors">all these folks</a> put it together.</p>
 
               <p>Check out this project on <a href="https://github.com/ResponsiveImagesCG/Sizer-Soze-frontend">GitHub</a>!</p>
-
           </li>
           <li class="ricg cf">
             <a href="http://responsiveimages.org"><img src="images/RICG-logo.png" alt="Responsive Images Community Group"></a>
           </li>
         </ul>
       </footer>
-
     </div>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="scripts/libs/tablesaw.stackonly.js"></script>
     <script src="scripts/sizer-soze.js"></script>
     <script src="scripts/main.js"></script>
-
   </body>
 </html>
